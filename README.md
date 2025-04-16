@@ -1,54 +1,20 @@
-# React + TypeScript + Vite
+# Plaza Victoria - Página Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al repositorio de **Plaza Victoria**, una página web diseñada para rendir homenaje y respeto a tu padre, destacando la belleza y esencia de la plaza a través de una experiencia interactiva y moderna.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta página web incluye una **renderización 3D de la Plaza Victoria**, permitiendo a los usuarios explorar y apreciar cada detalle de este lugar especial. El proyecto está desarrollado utilizando tecnologías modernas para garantizar un diseño atractivo, funcional y responsivo.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: Para la creación de componentes interactivos y una experiencia de usuario dinámica.
+- **TypeScript**: Para garantizar un código más robusto y mantenible.
+- **Tailwind CSS**: Para un diseño estilizado y responsivo de manera eficiente.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Características
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Renderización 3D**: Una representación visual interactiva de la Plaza Victoria.
+- **Diseño Responsivo**: Adaptado para dispositivos móviles, tabletas y computadoras.
+- **Interfaz Moderna**: Diseñada con Tailwind CSS para una experiencia visual atractiva.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
