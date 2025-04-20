@@ -1,6 +1,6 @@
 # Plaza Victoria - Página Web
 
-Bienvenido al repositorio de **Plaza Victoria**, una página web diseñada para rendir homenaje y respeto a tu padre, destacando la belleza y esencia de la plaza a través de una experiencia interactiva y moderna.
+Bienvenido al repositorio de **Plaza Victoria**, una página web diseñada para rendir homenaje y respeto a la plaza de mi padre, destacando la belleza y esencia de la plaza a través de una experiencia interactiva y moderna.
 
 ## Descripción
 
