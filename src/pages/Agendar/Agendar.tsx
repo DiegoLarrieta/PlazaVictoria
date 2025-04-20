@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useNavigate } from "react-router-dom";
+
 
 const Agendar = () => {
   const [name, setName] = useState("");
@@ -9,7 +9,7 @@ const Agendar = () => {
   const [comments, setComments] = useState("");
   const [date, setDate] = useState<Date | null>(null);
   const [time, setTime] = useState("");
-  const navigate = useNavigate();
+
 
   const horarios = [" 9:00 am "," 10:00 am ", " 11:00 am ", " 12:00 pm ", "1:00 pm", " 2:00 pm ", " 3:00 pm ", " 4:00 pm "," 5:00 pm"];
 
