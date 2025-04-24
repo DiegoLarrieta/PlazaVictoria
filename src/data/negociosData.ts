@@ -4,7 +4,8 @@ import {
   ConsultorioDentalLogoDemo,
   FarmasanaLogoDemo,
   FarmasanaImg1Demo,
-  FarmasanaImg2Demo
+  FarmasanaImg2Demo,
+  LogoPlazaVictoria,
 
 } from "../assets/images";
 
@@ -68,7 +69,27 @@ export type Negocio = {
         whatsapp: "https://wa.me/5217711234567",
         facebook: "https://facebook.com/la-taqueria",
         instagram: "https://instagram.com/la-taqueria",
-      }
+      },
+    },
+    {
+      id: 3,
+      nombre: "Nombre de tu Negocio",
+      descripcion: "Descripción de tu negocio",
+      categoria: "Tu giro aqui",
+      logo: LogoPlazaVictoria,
+      imagenes: [
+        FarmasanaImg1Demo,
+        FarmasanaImg2Demo
+      ],
+      horario: "Lunes a Sábado - 11:00 a.m. a 9:00 p.m.",
+      ubicacion: "Ubicacion dentro de plaza", // 👈 NUEVO CAMPO
+      ruta: "/directorio/farmaciafarmasana",
+      contacto: {
+        telefono: "7711234567",
+        whatsapp: "https://wa.me/5217711234567",
+        facebook: "https://facebook.com/la-taqueria",
+        instagram: "https://instagram.com/la-taqueria",
+      },
     },
   ];
   

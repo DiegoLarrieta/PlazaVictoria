@@ -8,7 +8,7 @@ const InfoPlaza = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Imagen ilustrativa */}
           <img
-            src="/imagenes/plaza-exterior.jpg"
+            src="/plaza/pvside.jpeg"
             alt="Vista frontal de Plaza Victoria en Ixmiquilpan"
             loading="lazy"
             className="w-full h-auto rounded-lg shadow-md object-cover"

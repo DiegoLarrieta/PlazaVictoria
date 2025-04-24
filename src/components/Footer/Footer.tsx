@@ -8,7 +8,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-2 text-base">Ubicación</h3>
             <p>Plaza Victoria<br />Ixmiquilpan, Hidalgo, México</p>
             <a
-              href="https://www.google.com/maps" // Reemplaza con enlace real
+              href="https://maps.app.goo.gl/yPLrj1PUFybcJMUt6" // Reemplaza con enlace real
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-700 underline mt-2 inline-block"

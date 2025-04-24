@@ -1,12 +1,12 @@
 const CTAFinal = () => {
     return (
       <section
-        className="relative bg-[#dfc3c0] text-white py-20 px-6 overflow-hidden"
+        className="relative bg-[#ffca7e] text-white py-20 px-6 overflow-hidden"
         aria-label="Llamado a la acción para agendar cita en Plaza Victoria"
       >
         {/* Imagen de fondo opcional con capa de color */}
         <img
-          src="/imagenes/cta-fondo.jpg"
+          src="/plaza/cta-fondo.png"
           alt="Interior de Plaza Victoria"
           className="absolute inset-0 w-full h-full object-cover opacity-20"
           loading="lazy"
@@ -21,7 +21,7 @@ const CTAFinal = () => {
           </p>
           <a
             href="/agendar"
-            className="bg-white text-[#dfc3c0] px-6 py-3 rounded-full font-semibold shadow hover:bg-[#c4a9a2] hover:text-white transition"
+            className="bg-white text-[#0e6886] px-6 py-3 rounded-full font-semibold shadow hover:bg-[#c4a9a2] hover:text-white transition"
             aria-label="Ir a la página de agendar cita"
           >
             Agendar visita

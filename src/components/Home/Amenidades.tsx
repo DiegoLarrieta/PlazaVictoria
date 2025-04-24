@@ -1,27 +1,27 @@
 const amenidades = [
     {
       nombre: "Elevadores",
-      icono: "/iconos/elevador.png", // Coloca tus íconos en /public/iconos/
+      icono: "/plaza/elevador.jpeg", // Coloca tus íconos en /public/iconos/
       descripcion: "Fácil acceso a todos los niveles.",
     },
     {
       nombre: "Escaleras",
-      icono: "/iconos/escaleras.png",
+      icono: "/plaza/escaleras.jpeg",
       descripcion: "Conexión fluida entre pisos.",
     },
     {
       nombre: "Estacionamiento",
-      icono: "/iconos/estacionamiento.png",
+      icono: "/plaza/estaciona.jpeg",
       descripcion: "Amplio espacio para visitantes y locatarios.",
     },
     {
       nombre: "Área de alimentos",
-      icono: "/iconos/comida.png",
+      icono: "/plaza/alimentos.jpeg",
       descripcion: "Espacio ideal para negocios gastronómicos.",
     },
     {
       nombre: "Baños",
-      icono: "/iconos/baños.png",
+      icono: "/plaza/banos.jpeg",
       descripcion: "Disponibles en todos los niveles para comodidad de todos.",
     },
   ];
@@ -48,7 +48,7 @@ const amenidades = [
                 <img
                   src={item.icono}
                   alt={`Ícono de ${item.nombre}`}
-                  className="h-16 w-16 mb-4 object-contain"
+                  className="h-30 w-30 mb-4 object-contain"
                   loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-[#dfc3c0] mb-2">
