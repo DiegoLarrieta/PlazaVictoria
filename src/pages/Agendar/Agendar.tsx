@@ -36,14 +36,13 @@ const Agendar = () => {
 
     const message = `Hola, me gustaría agendar una cita para conocer Plaza Victoria.
 
-🧑‍💼 **Nombre**: ${name}
-🏢 ¿Tiene un negocio actualmente?: ${hasBusiness}
-💡 Tipo de negocio que desea abrir: ${businessType}
-📣 ¿Cómo se enteró de Plaza Victoria?: ${sourceFinal}
-📅 **Fecha**: ${formattedDate}
-⏰ **Hora**: ${time}
-📝 Comentarios: ${comments || "Ninguno"}`;
-
+ **Nombre**: ${name}
+ ¿Tiene un negocio actualmente?: ${hasBusiness}
+ Tipo de negocio que desea abrir: ${businessType}
+ ¿Cómo se enteró de Plaza Victoria?: ${sourceFinal}
+ **Fecha**: ${formattedDate}
+ **Hora**: ${time}
+ Comentarios: ${comments || "Ninguno"}`;
     const whatsappURL = `https://wa.me/5217713198995?text=${encodeURIComponent(
       message
     )}`;
