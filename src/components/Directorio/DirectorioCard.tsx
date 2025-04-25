@@ -30,21 +30,33 @@ const getCategoriaColor = (categoria: string) => {
   }
 };
 
-const BusinessCard = ({ negocio }: Props) => {
+const DirectorioCard = ({ negocio }: Props) => {
   return (
-    <div className="bg-white shadow-md rounded-xl overflow-hidden border hover:shadow-lg transition-all duration-200">
+    <article
+      className="bg-white shadow-md rounded-xl overflow-hidden border hover:shadow-lg transition-all duration-200"
+      aria-label={`Negocio: ${negocio.nombre}`}
+    >
       {/* Logo */}
       <img
         src={negocio.logo}
-        alt={`Logo de ${negocio.nombre}`}
+        alt={`Logo del negocio ${negocio.nombre} en Plaza Victoria, Ixmiquilpan`}
+        loading="lazy"
         className="w-full h-40 object-contain p-4 bg-[#fdf8f7]"
       />
 
       {/* Info */}
       <div className="p-4 flex flex-col gap-2">
-        <h3 className="text-lg font-bold text-gray-800">{negocio.nombre}</h3>
-        <p className="text-sm text-gray-600">{negocio.descripcion}</p>
-        <p className="text-sm text-gray-500 italic">{negocio.ubicacion}</p>
+        <h3 className="text-lg font-bold text-gray-800">
+          {negocio.nombre}
+        </h3>
+
+        <p className="text-sm text-gray-500">
+          {negocio.sobre}
+        </p>
+
+        <p className="text-sm text-gray-500 italic">
+          {negocio.ubicacion}
+        </p>
 
         {/* Categoría */}
         <div className="flex justify-start mt-1">
@@ -57,17 +69,17 @@ const BusinessCard = ({ negocio }: Props) => {
           </span>
         </div>
 
-
         {/* Botón */}
         <Link
           to={negocio.ruta}
           className="mt-3 inline-block bg-[#dfc3c0] text-white text-sm px-4 py-2 rounded hover:opacity-90"
+          aria-label={`Ver más sobre ${negocio.nombre} en Plaza Victoria, Ixmiquilpan`}
         >
           Ver más
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 
-export default BusinessCard;
+export default DirectorioCard;

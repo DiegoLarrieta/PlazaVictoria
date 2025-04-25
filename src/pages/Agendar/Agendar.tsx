@@ -2,33 +2,51 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-
 const Agendar = () => {
   const [name, setName] = useState("");
-  const [occupation, setOccupation] = useState("");
+  const [hasBusiness, setHasBusiness] = useState("");
+  const [businessType, setBusinessType] = useState("");
+  const [source, setSource] = useState("");
+  const [otherSource, setOtherSource] = useState("");
   const [comments, setComments] = useState("");
   const [date, setDate] = useState<Date | null>(null);
   const [time, setTime] = useState("");
 
-
-  const horarios = [" 9:00 am "," 10:00 am ", " 11:00 am ", " 12:00 pm ", "1:00 pm", " 2:00 pm ", " 3:00 pm ", " 4:00 pm "," 5:00 pm"];
+  const horarios = [
+    " 9:00 am ",
+    " 10:00 am ",
+    " 11:00 am ",
+    " 12:00 pm ",
+    "1:00 pm",
+    " 2:00 pm ",
+    " 3:00 pm ",
+    " 4:00 pm ",
+    " 5:00 pm",
+  ];
 
   const handleSubmit = () => {
-    if (!name || !occupation || !date || !time) {
-      alert("Por favor llena todos los campos.");
+    if (!name || !hasBusiness || !businessType || !source || !date || !time) {
+      alert("Por favor llena todos los campos obligatorios.");
       return;
     }
 
     const formattedDate = date.toLocaleDateString("es-MX");
+
+    const sourceFinal = source === "Otro" ? otherSource : source;
+
     const message = `Hola, me gustaría agendar una cita para conocer Plaza Victoria.
 
-🔹 Nombre: ${name}
-🔹 Ocupación: ${occupation}
-🔹 Fecha: ${formattedDate}
-🔹 Hora: ${time}
+🧑‍💼 **Nombre**: ${name}
+🏢 ¿Tiene un negocio actualmente?: ${hasBusiness}
+💡 Tipo de negocio que desea abrir: ${businessType}
+📣 ¿Cómo se enteró de Plaza Victoria?: ${sourceFinal}
+📅 **Fecha**: ${formattedDate}
+⏰ **Hora**: ${time}
 📝 Comentarios: ${comments || "Ninguno"}`;
 
-    const whatsappURL = `https://wa.me/5217711234567?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/5217713198995?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(whatsappURL, "_blank");
   };
 
@@ -45,20 +63,54 @@ const Agendar = () => {
           className="w-full border rounded px-4 py-2"
         />
 
+        <div>
+          <label className="block mb-1 font-medium">
+            ¿Tiene un negocio actualmente?
+          </label>
+          <select
+            value={hasBusiness}
+            onChange={(e) => setHasBusiness(e.target.value)}
+            className="w-full border rounded px-4 py-2"
+          >
+            <option value="">Selecciona una opción</option>
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
         <input
           type="text"
-          placeholder="Ocupación"
-          value={occupation}
-          onChange={(e) => setOccupation(e.target.value)}
+          placeholder="¿Qué tipo de negocio desea abrir?"
+          value={businessType}
+          onChange={(e) => setBusinessType(e.target.value)}
           className="w-full border rounded px-4 py-2"
         />
 
-        <textarea
-          placeholder="Comentarios (opcional)"
-          value={comments}
-          onChange={(e) => setComments(e.target.value)}
-          className="w-full border rounded px-4 py-2"
-        />
+        <div>
+          <label className="block mb-1 font-medium">
+            ¿Cómo se enteró de Plaza Victoria?
+          </label>
+          <select
+            value={source}
+            onChange={(e) => setSource(e.target.value)}
+            className="w-full border rounded px-4 py-2"
+          >
+            <option value="">Selecciona una opción</option>
+            <option value="Redes sociales">Redes sociales</option>
+            <option value="Recomendación">Recomendación</option>
+            <option value="Pasó por la zona">Pasó por la zona</option>
+            <option value="Otro">Otro</option>
+          </select>
+          {source === "Otro" && (
+            <input
+              type="text"
+              placeholder="Especifica cómo te enteraste"
+              value={otherSource}
+              onChange={(e) => setOtherSource(e.target.value)}
+              className="w-full border rounded px-4 py-2 mt-2"
+            />
+          )}
+        </div>
 
         <div>
           <label className="block mb-1 font-medium">Selecciona la fecha:</label>
@@ -69,8 +121,7 @@ const Agendar = () => {
             dateFormat="dd/MM/yyyy"
             className="w-full min-w-[260px] border rounded px-4 py-2"
             placeholderText="Haz clic para elegir una fecha"
-        />
-
+          />
         </div>
 
         <div>
@@ -80,8 +131,8 @@ const Agendar = () => {
               <button
                 key={h}
                 onClick={() => setTime(h)}
-                className={`px-4 py-2 rounded border ${
-                  time === h ? "bg-[#dfc3c0] text-white" : "bg-white"
+                className={`px-4 py-2 rounded-xl border ${
+                  time === h ? "bg-[#eda135] text-white" : "bg-white"
                 }`}
               >
                 {h}
@@ -90,9 +141,16 @@ const Agendar = () => {
           </div>
         </div>
 
+        <textarea
+          placeholder="Comentarios adicionales (opcional)"
+          value={comments}
+          onChange={(e) => setComments(e.target.value)}
+          className="w-full border rounded px-4 py-2"
+        />
+
         <button
           onClick={handleSubmit}
-          className="bg-[#dfc3c0] text-white py-2 px-6 rounded mt-4 hover:opacity-90 w-full"
+          className="bg-[#0e6886] text-white py-2 px-6 rounded mt-4 hover:opacity-90 w-full"
         >
           Confirmar cita y enviar a WhatsApp
         </button>

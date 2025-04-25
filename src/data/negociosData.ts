@@ -1,18 +1,7 @@
-import { 
-  ConsultorioDentalImg1Demo, 
-  ConsultorioDentalImg2Demo,
-  ConsultorioDentalLogoDemo,
-  FarmasanaLogoDemo,
-  FarmasanaImg1Demo,
-  FarmasanaImg2Demo,
-  LogoPlazaVictoria,
-
-} from "../assets/images";
-
-
 export type Negocio = {
     id: number;
     nombre: string;
+    sobre: string;
     descripcion: string;
     categoria: string;
     logo: string;
@@ -33,12 +22,13 @@ export type Negocio = {
     {
       id: 1,
       nombre: "Consultorio Dental",
-      descripcion: "Especializastas en el area de la salud bucal.",
+      sobre: "Especializastas en el area de la salud bucal.",
+      descripcion: "Consultorio Dental con la mejor atención y calidad, contamos con la mejor tecnologia para cuidar tu salud bucal.",
       categoria: "Salud",
-      logo: ConsultorioDentalLogoDemo,
+      logo: "negocios/Dentista/ConsultorioDentalDemo.jpeg",
       imagenes: [
-        ConsultorioDentalImg1Demo,
-        ConsultorioDentalImg2Demo
+        "negocios/Dentista/consultoriodental.jpg",
+        "negocios/Dentista/consultorioaparatodemo.webp"
       ],
       horario: "Lunes a Sábado - 11:00 a.m. a 9:00 p.m.",
       ubicacion: "Planta Baja - Local 8", // 👈 NUEVO CAMPO
@@ -54,12 +44,13 @@ export type Negocio = {
     {
       id: 2,
       nombre: "Farmasana",
-      descripcion: "Farmasana, Calidad que Sana",
+      sobre: "Farmasana, Calidad que Sana",
+      descripcion: "Farmasana es una farmacia que se dedica a la venta de medicamentos y productos de salud y bienestar. Ofrecemos una amplia gama de productos farmacéuticos, así como asesoría profesional para el cuidado de tu salud.",
       categoria: "Salud",
-      logo: FarmasanaLogoDemo,
+      logo: "negocios/Farmacia/faramasanalogo.jpeg",
       imagenes: [
-        FarmasanaImg1Demo,
-        FarmasanaImg2Demo
+        "negocios/Farmacia/farmasana1.webp",
+        "negocios/Farmacia/farmasana2.webp"
       ],
       horario: "Lunes a Sábado - 11:00 a.m. a 9:00 p.m.",
       ubicacion: "Planta Baja - Local 8", // 👈 NUEVO CAMPO
@@ -74,16 +65,17 @@ export type Negocio = {
     {
       id: 3,
       nombre: "Nombre de tu Negocio",
-      descripcion: "Descripción de tu negocio",
+      sobre: "Descripción de tu negocio",
+      descripcion: "Descripción de lo que es tu negocio , productos o servicios que ofreces y cualquier otra información relevante.",
       categoria: "Tu giro aqui",
-      logo: LogoPlazaVictoria,
+      logo: "negocios/NegocioDemo/logonegociodemo.png",
       imagenes: [
-        FarmasanaImg1Demo,
-        FarmasanaImg2Demo
+        "negocios/NegocioDemo/negociodemo1.jpeg",
+        "negocios/NegocioDemo/negociodemo2.jpeg",
       ],
       horario: "Lunes a Sábado - 11:00 a.m. a 9:00 p.m.",
       ubicacion: "Ubicacion dentro de plaza", // 👈 NUEVO CAMPO
-      ruta: "/directorio/farmaciafarmasana",
+      ruta: "/directorio/nombre-de-tu-negocio",
       contacto: {
         telefono: "7711234567",
         whatsapp: "https://wa.me/5217711234567",
