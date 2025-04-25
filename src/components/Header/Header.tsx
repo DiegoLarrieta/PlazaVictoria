@@ -19,10 +19,10 @@ const Header = () => {
     <header className="w-full shadow-md bg-[#dfc3c0] fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo y nombre */}
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={LogoHeaderPlazaVictoria} alt="Logo Plaza Victoria" className="h-10 w-auto" />
           <span className="font-semibold text-xl text-gray-800">Plaza Victoria</span>
-        </div>
+        </Link>
 
         {/* Menú en desktop */}
         <nav className="hidden md:flex gap-6 items-center">
