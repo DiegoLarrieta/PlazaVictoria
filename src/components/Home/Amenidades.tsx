@@ -24,6 +24,11 @@ const amenidades = [
       icono: "/plaza/banos.jpeg",
       descripcion: "Disponibles en todos los niveles para comodidad de todos.",
     },
+    {
+      nombre: "Iluminacion",
+      icono: "/plaza/iluminacion.jpeg",
+      descripcion: "Espacios bien iluminados para una mejor experiencia.",
+    }
   ];
   
   const Amenidades = () => {
