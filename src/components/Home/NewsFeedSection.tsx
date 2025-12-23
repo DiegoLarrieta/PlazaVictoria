@@ -20,6 +20,16 @@ export function NewsFeedSection() {
     return postsData.filter((p) => p.labels.includes(activeFilter));
   }, [activeFilter]);
 
+  const scrollToFeedTop = () => {
+    const el = document.getElementById("news-feed-top");
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleHome = () => {
+    setActiveFilter(null);
+    scrollToFeedTop();
+  };
+
   return (
     <section aria-label="Novedades" className="w-full pt-6 md:pt-4">
       <FeedLayout
@@ -28,11 +38,12 @@ export function NewsFeedSection() {
             filters={AVAILABLE_FILTERS}
             activeFilter={activeFilter}
             onSelectFilter={(key) => setActiveFilter(key)}
-            onReset={() => setActiveFilter(null)}
+            onReset={handleHome}
+
           />
         }
         center={
-          <div className="w-full">
+          <div className="w-full" id="news-feed-top">
             <div className="mb-4 flex flex-col gap-2 text-center md:text-left">
               <div>
                 <h2 className="text-xl font-semibold">Novedades y noticias de Plaza Victoria</h2>
@@ -67,7 +78,8 @@ export function NewsFeedSection() {
             <MobileFeedNav
                 activeFilter={activeFilter}
                 onSelectFilter={(key) => setActiveFilter(key)}
-                onReset={() => setActiveFilter(null)}    
+                onReset={handleHome}
+   
             />
 
           </div>
