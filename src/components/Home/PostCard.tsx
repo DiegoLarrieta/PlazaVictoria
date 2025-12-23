@@ -26,7 +26,7 @@ export function PostCard({ post }: { post: Post }) {
           </div>
         </div>
 
-        <ShareButton postId={post.id} />
+        <ShareButton slug={post.slug} />
       </div>
 
       <div className="px-4 pb-4">

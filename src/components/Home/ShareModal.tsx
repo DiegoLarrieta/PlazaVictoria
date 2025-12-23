@@ -2,24 +2,22 @@ import React from "react";
 import { X, Copy, MessageCircle } from "lucide-react";
 
 export function ShareModal({
-  postId,
+  slug,
   onClose,
 }: {
-  postId: string;
+  slug: string;
   onClose: () => void;
 }) {
   const link = React.useMemo(() => {
-    // Como aún no hay página de detalle, compartimos ancla al post.
-    // Luego lo cambiamos a /novedades/<slug> sin romper la UI.
-    return `${window.location.origin}${window.location.pathname}#${postId}`;
-  }, [postId]);
+    // Link definitivo para compartir (sin hash)
+    return `${window.location.origin}/novedades/${slug}`;
+  }, [slug]);
 
   const onCopy = async () => {
     try {
       await navigator.clipboard.writeText(link);
       alert("Link copiado ✅");
     } catch {
-      // fallback básico
       prompt("Copia este link:", link);
     }
   };

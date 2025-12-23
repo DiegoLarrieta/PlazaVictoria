@@ -11,6 +11,9 @@ import NegocioDetalle from '../pages/Directorio/NegocioDetalle';
 import Directorio from '../pages/Directorio/Directorio';
 // import Agendar from '../pages/Agendar';
 
+import PostDetail from "../pages/Novedades/PostDetail";
+
+
 const AppRoutes = () => {
   return (
     <>
@@ -22,8 +25,9 @@ const AppRoutes = () => {
           <Route path="/locales" element={<Locales />} />
           <Route path="/directorio" element={<Directorio />} />
           <Route path="/directorio/:slug" element={<NegocioDetalle />} />
-
           <Route path="/agendar" element={<Agendar />} />
+          <Route path="/novedades/:slug" element={<PostDetail />} />
+
         </Routes>
       </div>
       <Footer/>

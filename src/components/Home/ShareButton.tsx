@@ -2,7 +2,11 @@ import React from "react";
 import { Share2 } from "lucide-react";
 import { ShareModal } from "./ShareModal";
 
-export function ShareButton({ postId }: { postId: string }) {
+type ShareButtonProps = {
+  slug: string;
+};
+
+export function ShareButton({ slug }: ShareButtonProps) {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -17,7 +21,7 @@ export function ShareButton({ postId }: { postId: string }) {
         <span className="hidden sm:inline">Compartir</span>
       </button>
 
-      {open && <ShareModal postId={postId} onClose={() => setOpen(false)} />}
+      {open && <ShareModal slug={slug} onClose={() => setOpen(false)} />}
     </>
   );
 }
