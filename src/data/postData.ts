@@ -38,4 +38,32 @@ export const postsData: Post[] = [
     labels: ["promociones", "eventos"],
     date: "2024-12-08",
   },
+  {
+    id: "tu-negocio-en-plaza-victoria",
+    type: "poster",
+    src: "/feed/Posters/marcaenplazavictoria.jpg",
+    description:
+      "💼 Emprendedor, profesionista, empresario: ¡Tu marca, producto o servicio puede comenzar aquí con nosotros! 🌟 Aún tenemos locales comerciales disponibles para que formes parte de Plaza Victoria. ",
+    labels: ["aperturas"],
+    date: "2025-12-01",
+  },
+  {
+    id: "promocion-nuevo-local",
+    type: "poster",
+    src: "/feed/Posters/anunciopv.jpg",
+    description:
+      "¡No dejes pasar esta oportunidad! Locales 105 y 106 ubicados en la planta baja de la plaza, con una medida de 33.01 m². Una excelente opción para tener uno de los mejores locales de la plaza.",
+    labels: ["promociones"],
+    date: "2024-11-08",
+  },
+  {
+    id: "anuncio-apertura-estacionamiento",
+    type: "image",
+    src: "/feed/Images/estacionamientoanuncio.jpg",
+    description:
+      "🚗 ¡Ahora puedes disfrutar del estacionamiento de Plaza Victoria! Deja tu auto con comodidad mientras visitas nuestras tiendas y eventos.",
+    labels: ["aperturas"],
+    date: "2025-10-09",
+  },
+
 ];
