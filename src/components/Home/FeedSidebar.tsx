@@ -24,7 +24,7 @@ export function FeedSidebar({
     <div className="sticky top-24 flex flex-col items-center gap-3">
       {/* Home / reset */}
       <IconButton
-        label="Todos"
+        label="Inicio"
         active={activeFilter === null}
         onClick={onReset}
         icon={<Home className="h-5 w-5" />}

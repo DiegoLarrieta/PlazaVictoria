@@ -3,6 +3,8 @@ import { postsData } from "../../data/postData";
 import { FeedLayout } from "./FeedLayout";
 import { FeedSidebar, FeedFilter } from "./FeedSidebar";
 import { PostFeed } from "./PostFeed";
+import { MobileFeedNav } from "./MobileFeedNav";
+
 
 const AVAILABLE_FILTERS: FeedFilter[] = [
   { key: "eventos", label: "Eventos" },
@@ -19,7 +21,7 @@ export function NewsFeedSection() {
   }, [activeFilter]);
 
   return (
-    <section aria-label="Novedades" className="w-full">
+    <section aria-label="Novedades" className="w-full pt-6 md:pt-4">
       <FeedLayout
         left={
           <FeedSidebar
@@ -31,11 +33,11 @@ export function NewsFeedSection() {
         }
         center={
           <div className="w-full">
-            <div className="mb-4 flex items-center justify-between gap-3">
+            <div className="mb-4 flex flex-col gap-2 text-center md:text-left">
               <div>
-                <h2 className="text-xl font-semibold">Novedades</h2>
+                <h2 className="text-xl font-semibold">Novedades y noticias de Plaza Victoria</h2>
                 <p className="text-sm text-zinc-500">
-                  Eventos, aperturas y promociones de la plaza.
+                  Eventos, aperturas y promociones en la plaza.
                 </p>
               </div>
 
@@ -58,35 +60,16 @@ export function NewsFeedSection() {
             </div>
 
             {/* Filtros en mobile (sin hover) */}
-            <div className="mb-4 flex md:hidden items-center gap-2 overflow-x-auto pb-2">
-              <button
-                type="button"
-                onClick={() => setActiveFilter(null)}
-                className={`shrink-0 rounded-full border px-3 py-1 text-sm ${
-                  activeFilter === null
-                    ? "border-zinc-900 bg-zinc-900 text-white"
-                    : "border-zinc-200 hover:bg-zinc-50"
-                }`}
-              >
-                Todos
-              </button>
-              {AVAILABLE_FILTERS.map((f) => (
-                <button
-                  key={f.key}
-                  type="button"
-                  onClick={() => setActiveFilter(f.key)}
-                  className={`shrink-0 rounded-full border px-3 py-1 text-sm ${
-                    activeFilter === f.key
-                      ? "border-zinc-900 bg-zinc-900 text-white"
-                      : "border-zinc-200 hover:bg-zinc-50"
-                  }`}
-                >
-                  {f.label}
-                </button>
-              ))}
+            <div className="pb-20 md:pb-0">
+                <PostFeed posts={filteredPosts} activeFilter={activeFilter} />
             </div>
 
-            <PostFeed posts={filteredPosts} activeFilter={activeFilter} />
+            <MobileFeedNav
+                activeFilter={activeFilter}
+                onSelectFilter={(key) => setActiveFilter(key)}
+                onReset={() => setActiveFilter(null)}    
+            />
+
           </div>
         }
       />
