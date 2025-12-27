@@ -6,7 +6,7 @@ const HeroPrincipal = () => {
     >
       {/* Imagen de fondo optimizada */}
       <img
-        src="/plaza/frontalpv.jpeg"
+        src="/plaza/InicioPlazaVictoria.png"
         alt="Fachada de Plaza Victoria, centro comercial en Ixmiquilpan Hidalgo"
         loading="eager"
         fetchPriority="high"

@@ -15,6 +15,18 @@ export interface Post {
 
 export const postsData: Post[] = [
     {
+        id: "dias-festivos-anuncio",
+        slug: "dias-festivos-anuncio",
+        title: "Estos son los dias en que Plaza Victoria estará cerrado",
+        type: "poster",
+        src: "/feed/Posters/daysoff.jpg",
+        shareImage: "/feed/Posters/daysoff.jpg",
+        description:
+          "📢 ¡Atención clientes de Plaza Victoria! Les informamos que estaremos cerrados los días 25 de diciembre y 1 de enero para celebrar las festividades navideñas y de Año Nuevo. 🎄🎉 Agradecemos su comprensión y les deseamos unas felices fiestas. ¡Nos vemos pronto!",
+        labels: ["eventos"],
+        date: "2024-12-22",
+    },
+    {
       id: "santa-en-plaza-victoria",
       slug: "santa-en-plaza-victoria",
       title: "¡Santa Claus ha llegado a Plaza Victoria!",

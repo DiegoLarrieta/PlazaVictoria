@@ -1,5 +1,10 @@
 const amenidades = [
     {
+      nombre: "Estacionamiento",
+      icono: "/plaza/estaciona.jpeg",
+      descripcion: "Amplio espacio para visitantes y locatarios.",
+    },
+    {
       nombre: "Elevadores",
       icono: "/plaza/elevador.jpeg", // Coloca tus íconos en /public/iconos/
       descripcion: "Fácil acceso a todos los niveles.",
@@ -8,11 +13,6 @@ const amenidades = [
       nombre: "Escaleras",
       icono: "/plaza/escaleras.jpeg",
       descripcion: "Conexión fluida entre pisos.",
-    },
-    {
-      nombre: "Estacionamiento",
-      icono: "/plaza/estaciona.jpeg",
-      descripcion: "Amplio espacio para visitantes y locatarios.",
     },
     {
       nombre: "Área de alimentos",

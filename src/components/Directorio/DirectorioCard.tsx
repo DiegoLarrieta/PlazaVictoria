@@ -7,23 +7,23 @@ type Props = {
 
 const getCategoriaColor = (categoria: string) => {
   switch (categoria.toLowerCase()) {
-    case "tecnología":
+    case "calzado":
       return "bg-blue-500";
-    case "alimentos":
-      return "bg-red-500";
+    case "jugeteria":
+      return "bg-orange-500";
     case "ropa":
       return "bg-purple-500";
     case "belleza":
       return "bg-pink-500";
     case "salud":
       return "bg-green-500";
-    case "servicios":
+    case "gorras":
       return "bg-yellow-500 text-black";
-    case "entretenimiento":
+    case "perfumeria":
       return "bg-indigo-500";
     case "hogar":
       return "bg-orange-500"; // Si usas esto, agrégalo en tailwind.config.js
-    case "papelería":
+    case "infantil":
       return "bg-cyan-500";
     default:
       return "bg-gray-500";

@@ -9,8 +9,9 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
+    { label: "Inicio", path: "/" },
     { label: "Nosotros", path: "/nosotros" },
-    { label: "Locales", path: "/locales" },
+    //{ label: "Locales", path: "/locales" },
     { label: "Directorio", path: "/directorio" },
     { label: "Agendar cita", path: "/agendar" },
   ];
