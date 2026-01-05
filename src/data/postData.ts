@@ -15,6 +15,30 @@ export interface Post {
 
 export const postsData: Post[] = [
     {
+        id: "video-principal-plaza-victoria",
+        slug: "video-introduccion-plaza-victoria",
+        title: "Descubre Plaza Victoria: El mejor centro comercial de Ixmiquilpan",
+        type: "video",
+        src: "/feed/Videos/videoInstitucional.mp4",
+        shareImage: "/plaza/InicioPlazaVictoria.png",
+        description:
+          "🎥 Descubre Plaza Victoria, el corazón comercial de Ixmiquilpan. Con una amplia variedad de tiendas, servicios y entretenimiento para toda la familia, somos tu destino ideal para compras y diversión. ¡Ven y vive la experiencia Plaza Victoria! 🛍️✨",
+        labels: ["eventos"],
+        date: "2026-01-05",
+    },
+    {
+        id: "reyes-magos-plaza-victoria",
+        slug: "reyes-magos-plaza-victoria",
+        title: "¡Celebra el Día de Reyes en Plaza Victoria!",
+        type: "poster",
+        src: "/feed/Posters/reyesmagos.jpeg",
+        shareImage: "/feed/Posters/reyesmagos.jpeg",
+        description:
+          "👑🎉 ¡Celebra el Día de Reyes en Plaza Victoria! Ven con tu familia y disfruta de actividades especiales, sorpresas y la visita de los Reyes Magos. No olvides traer tu carta y compartir la magia de esta tradición con nosotros. ¡Te esperamos el 6 de enero! 🎁✨",
+        labels: ["eventos"],
+        date: "2025-01-03",
+    },
+    {
         id: "dias-festivos-anuncio",
         slug: "dias-festivos-anuncio",
         title: "Estos son los dias en que Plaza Victoria estará cerrado",
@@ -24,7 +48,7 @@ export const postsData: Post[] = [
         description:
           "📢 ¡Atención clientes de Plaza Victoria! Les informamos que estaremos cerrados los días 25 de diciembre y 1 de enero para celebrar las festividades navideñas y de Año Nuevo. 🎄🎉 Agradecemos su comprensión y les deseamos unas felices fiestas. ¡Nos vemos pronto!",
         labels: ["eventos"],
-        date: "2024-12-22",
+        date: "2025-12-22",
     },
     {
       id: "santa-en-plaza-victoria",
@@ -36,7 +60,7 @@ export const postsData: Post[] = [
       description:
         "¡Santa Claus ha llegado a Plaza Victoria! 🎅 Ven a tomarte una foto con él y comparte tus deseos navideños. Estará con nosotros el 23 de diciembre, ¡no te lo pierdas!",
       labels: ["eventos"],
-      date: "2024-12-20",
+      date: "2025-12-20",
     },
     {
       id: "evento-posada-navidad",
@@ -48,7 +72,7 @@ export const postsData: Post[] = [
       description:
         "🎄✨ ¡Te invitamos a nuestra Posada Navideña en Plaza Victoria! Disfruta de entretenimiento para toda la familia, regalos especiales para los niños y delicias tradicionales como tamales y ponche. 🎁🍴 ¡Un evento totalmente gratuito que no te puedes perder!,",
       labels: ["eventos"],
-      date: "2024-12-15",
+      date: "2025-12-15",
     },
     {
       id: "venta-local-comercial-204",
@@ -72,7 +96,7 @@ export const postsData: Post[] = [
       description:
         "🎄 ¡Únete a nuestra Posada Navideña en Plaza Victoria! Ven con tu familia y amigos para disfrutar de una noche mágica, comida tradicional y la visita especial de Santa Claus. ¡No te lo pierdas!",
       labels: ["eventos"],
-      date: "2024-12-10",
+      date: "2025-12-10",
     },
     {
       id: "promocion-posada-navidad",
