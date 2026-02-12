@@ -19,7 +19,7 @@ const Footer = () => {
   
           {/* Derechos reservados */}
           <div className="text-sm md:text-right">
-            <p>© 2025 Plaza Victoria.<br />Todos los derechos reservados.</p>
+            <p>© 2026 Plaza Victoria.<br />Todos los derechos reservados.</p>
           </div>
   
         </div>
