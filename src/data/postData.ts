@@ -17,6 +17,67 @@ export interface Post {
 
 export const postsData: Post[] = [
   {
+    id: "renta-local-comercial-plaza-victoria",
+    slug: "renta-local-comercial-plaza-victoria-ixmiquilpan",
+    title: "✨ Dale a tu Negocio el Espacio que Merece ✨",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Posters/rentalocalpv.jpg",
+        alt: "Renta de Local Comercial en Plaza Victoria"
+      }
+    ],
+    shareImage: "/feed/Posters/rentalocalpv.jpg",
+    description:
+      "✨ Dale a tu Negocio el Espacio que Merece ✨\n\nRenta de Local Comercial en Plaza Victoria Centro Ixmiquilpan.\n\n‼️ Un Espacio Funcional, Listo para Ocuparse y Comenzar a Generar Ventas Desde el Primer Día. 💥\n\n📍 Ubicación Estratégica en el Corazón de la Ciudad de Ixmiquilpan.\n\n💘 Aprovecha Nuestro Precio Especial del 14 de Febrero y Enamórate del Lugar Perfecto para tu Negocio.\n\n¡Es el Momento Ideal para dar el Siguiente Paso en Plaza Victoria! 🥰",
+    labels: ["promociones"],
+    date: "2026-02-12",
+  },
+  {
+    id: "bienvenida-ammonite-plata",
+    slug: "bienvenida-ammonite-plata",
+    title: "✨ Bienvenida a Plaza Victoria ✨",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Images/ammonitep1.jpg",
+        alt: "Bienvenida Ammonite Plata - Joyería"
+      },
+      {
+        type: "image",
+        src: "/feed/Images/ammonitep2.jpg",
+        alt: "Ammonite Plata - Joyería en Plaza Victoria"
+      }
+    ],
+    shareImage: "/feed/Images/ammoniteplata1.jpg",
+    description:
+      "✨ Bienvenida a Plaza Victoria ✨\n\nEn Plaza Victoria nos llena de orgullo recibir a Ammonite Plata, una joyería que llega para brillar con estilo, detalle y elegancia.\n\nLes deseamos el mayor de los éxitos en esta nueva etapa y agradecemos la confianza de unirse a nuestra familia.\n\nQue cada joya cuente una historia… y que esta sea el inicio de muchas más. 💎\n\n¡Bienvenidos a Plaza Victoria!",
+  labels: ["aperturas"],
+  date: "2026-02-12",
+  },
+  {
+    id: "inaguracion-boutique-claus-aldana",
+    slug: "inaguracion-boutique-claus-aldana",
+    title: "¡Inauguración de Boutique Claus Aldana!",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Images/boutiquepost1.jpg",
+        alt: "Inauguración Boutique Claus Aldana"
+      },
+      {
+        type: "image",
+        src: "/feed/Images/boutiquep2.jpg",
+        alt: "Boutique Claus Aldana - Moda Femenina"
+      }
+    ],
+    shareImage: "/feed/Images/boutiquepost1.jpg",
+    description:
+      "👗💖 ¡Plaza Victoria les da la más cordial bienvenida a la inauguración de Boutique Claus Aldana! Hoy abrimos las puertas de un nuevo espacio dedicado a la moda femenina, con ropa para dama para todos los estilos. Gracias por ser parte de este momento especial. ¡Les deseamos una experiencia llena de estilo y elegancia!",
+    labels: ["aperturas"],
+    date: "2026-01-24",
+  },
+  {
     id: "video-principal-plaza-victoria",
     slug: "video-introduccion-plaza-victoria",
     title: "Descubre Plaza Victoria: El mejor centro comercial de Ixmiquilpan",
@@ -25,11 +86,6 @@ export const postsData: Post[] = [
         type: "video",
         src: "/feed/Videos/videoinstitucional.mp4",
         poster: "/plaza/InicioPlazaVictoria.png",
-      },
-      { 
-        type: "video",
-        src: "/feed/Videos/posada.mp4",
-        poster: "/feed/Images/navidad.jpg" 
       },
     ],
     shareImage: "/plaza/InicioPlazaVictoria.png",
@@ -45,18 +101,18 @@ export const postsData: Post[] = [
     media: [
       {
         type: "image",
-        src: "/feed/Images/reyesmagospv.jpg",
+        src: "/feed/Images/diareyes2.jpg",
         alt: "Día de Reyes en Plaza Victoria",
       },
       {
-        type: "video",
-        src: "/feed/Videos/videoinstitucional.mp4",
-        poster: "/plaza/InicioPlazaVictoria.png",
-      },
-      { 
         type: "image",
-        src: "/feed/Posters/reyesmagos.jpeg", 
-        alt: "Día de Reyes" 
+        src: "/feed/Images/diareyes3.jpg",
+        alt: "Día de Reyes en Plaza Victoria",
+      },
+      {
+        type: "image",
+        src: "/feed/Images/diareyes1.jpg",
+        alt: "Día de Reyes en Plaza Victoria",
       },
     ],
     shareImage: "/feed/Images/reyesmagospv.jpg",

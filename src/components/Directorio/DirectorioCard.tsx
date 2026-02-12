@@ -25,6 +25,8 @@ const getCategoriaColor = (categoria: string) => {
       return "bg-orange-500"; // Si usas esto, agrégalo en tailwind.config.js
     case "infantil":
       return "bg-cyan-500";
+    case "joyeria":
+      return "bg-amber-500";
     default:
       return "bg-gray-500";
   }

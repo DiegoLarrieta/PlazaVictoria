@@ -168,6 +168,48 @@ export type Negocio = {
         instagram: "https://instagram.com/la-taqueria",
       },
     },
+    {
+      id: 8,
+      nombre: "Ammonite Plata",
+      sobre: "Descripción de tu negocio",
+      descripcion: "Descripción de lo que es tu negocio , productos o servicios que ofreces y cualquier otra información relevante.",
+      categoria: "Joyeria",
+      logo: "negocios/ammonite-plata/logo.jpg",
+      imagenes: [
+        "negocios/NegocioDemo/negociodemo1.jpeg",
+        "negocios/NegocioDemo/negociodemo2.jpeg",
+      ],
+      horario: "Lunes a Sábado - 11:00 a.m. a 9:00 p.m.",
+      ubicacion: "Ubicacion dentro de plaza", // 👈 NUEVO CAMPO
+      ruta: "/directorio/nombre-de-tu-negocio",
+      contacto: {
+        telefono: "7721605565",
+        whatsapp: "https://wa.me/5217721605565",
+        facebook: "https://www.facebook.com/ammonite.plata925?locale=es_LA",
+        instagram: "https://instagram.com/la-taqueria",
+      },
+    },
+    {
+      id: 9,
+      nombre: "Mishel Morales",
+      sobre: "Productos importados directamente de USA con calidad y variedad",
+      descripcion: "¡Bienvenido a Mishel Morales! Un espacio que llega con una gran variedad de productos importados directamente de USA, pensados en ofrecer calidad y excelentes opciones para todos. 🛍️🇺🇸 Visítanos y descubre nuestras mejores ofertas.",
+      categoria: "Importados",
+      logo: "negocios/mishel-morales/logo.jpg",
+      imagenes: [
+        "negocios/mishel-morales/mishel2.jpg",
+        "negocios/mishel-morales/mishel3.jpg",
+      ],
+      horario: "Lunes a Sábado - 11:00 a.m. a 9:00 p.m.",
+      ubicacion: "Planta Baja - Local 213",
+      ruta: "/directorio/mishel-morales",
+      contacto: {
+        telefono: "7711234567",
+        whatsapp: "https://wa.me/5217711234567",
+        facebook: "https://facebook.com/mishel-morales",
+        instagram: "https://instagram.com/mishel-morales",
+      },
+    },
   ];
 
   /*
