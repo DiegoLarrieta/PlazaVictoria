@@ -16,6 +16,41 @@ export interface Post {
 }
 
 export const postsData: Post[] = [
+  // agregar template de post 
+  {
+    id: "el-regalo-perfecto-de-san-valentin-se-encuentra-en-plaza-victoria",
+    slug: "el-regalo-perfecto-de-san-valentin-se-encuentra-en-plaza-victoria",
+    title: "✨ El Regalo Perfecto de San Valentín se Encuentra en Plaza Victoria ✨",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/sanvalentinpv.mp4",
+        poster: "/feed/Images/sanvalentinpv.jpg",
+      }
+    ],
+    shareImage: "/feed/Images/sanvalentinpv.jpg",
+    description:
+      "✨ El Regalo Perfecto de San Valentín se Encuentra en Plaza Victoria ✨\n\n¡Descubre los mejores regalos para San Valentín en Plaza Victoria! 🎁\n\nEncontrarás una amplia variedad de productos para regalar a tu pareja, familia o amigos. ¡No pierdas esta oportunidad de encontrar el regalo perfecto!",
+    labels: ["promociones"],
+    date: "2026-02-14",
+  },
+  {
+    id: "local-comercial-en-venta-plaza-victoria",
+    slug: "local-comercial-en-venta-plaza-victoria",
+    title: "✨ Local Comercial en Venta en Plaza Victoria ✨",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/videorestaurante.mp4",
+        poster: "/feed/Images/localventa.jpg"
+      }
+    ],
+    shareImage: "/feed/Images/localventa.jpg",
+    description:
+      "✨ Local Comercial en Venta en Plaza Victoria ✨\n\n¡Descubre el espacio perfecto para tu negocio en Plaza Victoria!\n\nLocal comercial disponible para venta en la zona central de Ixmiquilpan.",
+    labels: ["eventos"],
+    date: "2026-02-14",
+  },
   {
     id: "renta-local-comercial-plaza-victoria",
     slug: "renta-local-comercial-plaza-victoria-ixmiquilpan",
