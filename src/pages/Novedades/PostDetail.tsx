@@ -9,7 +9,7 @@ export default function PostDetail() {
 
   if (!post) return <div className="mx-auto max-w-2xl p-6">Post no encontrado.</div>;
 
-  const siteUrl = "https://plazavictoria.netlify.app"; // luego lo hacemos configurable
+  const siteUrl = "https://plazavictoria.mx/"; // luego lo hacemos configurable
   const url = `${siteUrl}/novedades/${post.slug}`;
   const ogImage = `${siteUrl}${post.shareImage}`; // shareImage tipo "/feed/posada.jpg"
 
