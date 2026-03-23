@@ -1,39 +1,45 @@
-import { Routes, Route } from 'react-router-dom';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
+import MobileBottomNav from '../components/layout/MobileBottomNav';
 
-import Home from '../pages/Home/Home'
-import Nosotros from '../pages/Nosotros/Nosotros';
-import Locales from '../pages/Local/Locales';
-import Agendar from '../pages/Agendar/Agendar';
-import NegocioDetalle from '../pages/Directorio/NegocioDetalle';
+import Inicio from '../pages/Inicio/Inicio';
+import Tiendas from '../pages/Tiendas/Tiendas';
+import TiendaDetalle from '../pages/Tiendas/TiendaDetalle';
+import Novedades from '../pages/Novedades/Novedades';
+import NovedadDetalle from '../pages/Novedades/NovedadDetalle';
+import Ofertas from '../pages/Ofertas/Ofertas';
+import AdquiereTuLocal from '../pages/AdquiereTuLocal/AdquiereTuLocal';
 
-import Directorio from '../pages/Directorio/Directorio';
-// import Agendar from '../pages/Agendar';
-
-import PostDetail from "../pages/Novedades/PostDetail";
-
-
-const AppRoutes = () => {
+export default function AppRoutes() {
   return (
     <>
       <Header />
-      <div className="pt-16">
+
+      {/* pt-16 offsets fixed header; pb-16 offsets mobile bottom nav */}
+      <main className="min-h-screen pt-16 pb-16 md:pb-0">
         <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/locales" element={<Locales />} />
-          <Route path="/directorio" element={<Directorio />} />
-          <Route path="/directorio/:slug" element={<NegocioDetalle />} />
-          <Route path="/agendar" element={<Agendar />} />
-          <Route path="/novedades/:slug" element={<PostDetail />} />
+          {/* New routes */}
+          <Route path="/"                  element={<Navigate to="/inicio" replace />} />
+          <Route path="/inicio"            element={<Inicio />} />
+          <Route path="/tiendas"           element={<Tiendas />} />
+          <Route path="/tiendas/:slug"     element={<TiendaDetalle />} />
+          <Route path="/novedades"         element={<Novedades />} />
+          <Route path="/novedades/:slug"   element={<NovedadDetalle />} />
+          <Route path="/ofertas"           element={<Ofertas />} />
+          <Route path="/adquiere-tu-local" element={<AdquiereTuLocal />} />
 
+          {/* Redirects — old URLs stay alive */}
+          <Route path="/directorio"        element={<Navigate to="/tiendas" replace />} />
+          <Route path="/directorio/:slug"  element={<Navigate to="/tiendas" replace />} />
+          <Route path="/nosotros"          element={<Navigate to="/inicio" replace />} />
+          <Route path="/local"             element={<Navigate to="/adquiere-tu-local" replace />} />
+          <Route path="/agendar"           element={<Navigate to="/adquiere-tu-local" replace />} />
         </Routes>
-      </div>
-      <Footer/>
+      </main>
 
+      <Footer />
+      <MobileBottomNav />
     </>
   );
-};
-
-export default AppRoutes;
+}
