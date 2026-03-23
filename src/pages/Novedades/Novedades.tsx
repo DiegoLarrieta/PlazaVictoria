@@ -31,11 +31,13 @@ export default function Novedades() {
           </p>
         </div>
 
-        {/* Feed */}
+        {/* Feed — excludes promociones (those live in /ofertas) */}
         <div className="flex flex-col gap-5">
-          {postsData.map((post) => (
-            <PostCard key={post.id} post={post} />
-          ))}
+          {postsData
+            .filter((p) => !p.labels.includes('promociones'))
+            .map((post) => (
+              <PostCard key={post.id} post={post} />
+            ))}
         </div>
       </div>
     </>

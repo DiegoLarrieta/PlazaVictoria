@@ -129,17 +129,6 @@ export default function TiendaDetalle() {
           </button>
         </div>
 
-        {/* Dots indicator */}
-        {negocio.imagenes.length > 1 && (
-          <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
-            {negocio.imagenes.map((_, i) => (
-              <div
-                key={i}
-                className={`h-1.5 rounded-full transition-all ${i === 0 ? 'w-4 bg-white' : 'w-1.5 bg-white/50'}`}
-              />
-            ))}
-          </div>
-        )}
       </div>
 
       <div className="mx-auto max-w-5xl px-4 py-6 md:px-6 md:py-10">
