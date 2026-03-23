@@ -7,8 +7,8 @@ import OfertaCard from './components/OfertaCard';
 
 const SITE_URL = 'https://plazavictoria.mx';
 
-// Only posts tagged as promociones
-const ofertasPosts = postsData.filter((p) => p.labels.includes('promociones'));
+// Only active posts tagged as promociones
+const ofertasPosts = postsData.filter((p) => p.labels.includes('promociones') && p.active !== false);
 
 export default function Ofertas() {
   // Sorted by date descending (most recent first)

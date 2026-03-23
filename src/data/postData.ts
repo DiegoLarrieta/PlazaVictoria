@@ -6,16 +6,53 @@ export type PostMediaItem =
 
 export interface Post {
   id: string;
-  slug: string;           // NUEVO
-  title: string;          // NUEVO
-  media: PostMediaItem[]; // 👈 NUEVO
-  shareImage: string;     // NUEVO (para og:image)
+  slug: string;
+  title: string;
+  media: PostMediaItem[];
+  shareImage: string;
   description: string;
   labels: string[]; // eventos | aperturas | promociones
   date: string;     // "YYYY-MM-DD"
+  active?: boolean; // false = expired, hidden from Ofertas (still visible in Novedades)
 }
 
 export const postsData: Post[] = [
+  {
+    id: "oferta-skinny-jeans-claus-aldana",
+    slug: "oferta-skinny-jeans-claus-aldana",
+    title: "👖 Skinny Jeans de Temporada — Boutique Clau's Aldana",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Posters/skinny-jeans-claus-aldana.jpg",
+        alt: "Oferta Skinny Jeans — Boutique Clau's Aldana, Plaza Victoria Local 202",
+      },
+    ],
+    shareImage: "/feed/Posters/skinny-jeans-claus-aldana.jpg",
+    description:
+      "👖✨ ¡Los Skinny Jeans que estabas buscando ya están aquí!\n\nEn Boutique Clau's Aldana encontrarás la mejor selección de skinny jeans con el ajuste perfecto, el color ideal y la calidad que mereces — todo a precios que te van a encantar.\n\n🏷️ Aprovecha nuestras ofertas especiales en jeans y renueva tu look con el estilo que está marcando tendencia esta temporada.\n\n📍 Plaza Victoria | Local 202, Primer Nivel — Centro Ixmiquilpan\n\n¡Ven, pruébatelos y enamórate! 🛍️🌸",
+    labels: ["promociones"],
+    active: true,
+    date: "2026-03-22",
+  },
+  {
+    id: "oferta-boutique-claus-aldana-nueva-temporada",
+    slug: "oferta-boutique-claus-aldana-nueva-temporada",
+    title: "🌸 Nueva Temporada, Nuevos Looks — Boutique Clau's Aldana",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Posters/descuento-claus-aldana.jpg",
+        alt: "Oferta especial — Descuentos en todas las prendas en Boutique Clau's Aldana",
+      },
+    ],
+    shareImage: "/feed/Posters/descuento-claus-aldana.jpg",
+    description:
+      "🌸✨ Nueva Temporada, Nuevos Looks en Boutique Clau's Aldana.\n\n¡Renueva tu guardarropa con las mejores prendas de la nueva temporada y aprovecha los descuentos especiales que tenemos para ti! Faldas, blusas, vestidos y mucho más con los colores y estilos que están marcando tendencia.\n\n🏷️ Descuentos en todas las prendas\n📍 Plaza Victoria | Local 202, Primer Nivel — Centro Ixmiquilpan\n\n¡Ven y encuentra tu mejor outfit! 👏🥰",
+    labels: ["promociones"],
+    active: true,
+    date: "2026-03-22",
+  },
   {
     id: "my-closet-boutique-elegancia-que-se-nota",
     slug: "my-closet-boutique-elegancia-que-se-nota",
@@ -65,6 +102,7 @@ export const postsData: Post[] = [
     description:
       "✨ El Regalo Perfecto de San Valentín se Encuentra en Plaza Victoria ✨\n\n¡Descubre los mejores regalos para San Valentín en Plaza Victoria! 🎁\n\nEncontrarás una amplia variedad de productos para regalar a tu pareja, familia o amigos. ¡No pierdas esta oportunidad de encontrar el regalo perfecto!",
     labels: ["promociones"],
+    active: false,
     date: "2026-02-14",
   },
   {
@@ -99,6 +137,7 @@ export const postsData: Post[] = [
     description:
       "✨ Dale a tu Negocio el Espacio que Merece ✨\n\nRenta de Local Comercial en Plaza Victoria Centro Ixmiquilpan.\n\n‼️ Un Espacio Funcional, Listo para Ocuparse y Comenzar a Generar Ventas Desde el Primer Día. 💥\n\n📍 Ubicación Estratégica en el Corazón de la Ciudad de Ixmiquilpan.\n\n💘 Aprovecha Nuestro Precio Especial del 14 de Febrero y Enamórate del Lugar Perfecto para tu Negocio.\n\n¡Es el Momento Ideal para dar el Siguiente Paso en Plaza Victoria! 🥰",
     labels: ["promociones"],
+    active: false,
     date: "2026-02-12",
   },
   {
@@ -272,6 +311,7 @@ export const postsData: Post[] = [
     description:
       "Haz que tu negocio esté donde la ciudad se mueve, donde las oportunidades pasan y los clientes llegan. 😄 Plaza Victoria te acompaña en tu crecimiento.",
     labels: ["promociones"],
+    active: false,
     date: "2025-12-11",
   },
   {
@@ -323,6 +363,7 @@ export const postsData: Post[] = [
     description:
       "🎉 ¡Llegó el Buen Fin a Juguetería Victoria! Aprovecha nuestras increíbles ofertas y descuentos en toda la tienda. Encuentra juguetes y artículos para niños de las mejores marcas a precios irresistibles. ¡No te lo pierdas!",
     labels: ["promociones"],
+    active: false,
     date: "2025-11-07",
   },
   {
@@ -340,6 +381,7 @@ export const postsData: Post[] = [
     description:
       "🎉 ¡Llegó el Buen Fin a Montana Hats! Aprovecha nuestras increíbles ofertas y descuentos en toda la tienda. Encuentra gorras y accesorios de las mejores marcas a precios irresistibles. ¡No te lo pierdas!",
     labels: ["promociones"],
+    active: false,
     date: "2025-11-07",
   },
   {
@@ -357,6 +399,7 @@ export const postsData: Post[] = [
     description:
       "🎉 ¡Llegó el Buen Fin a Boutique My Clóset! Aprovecha nuestras increíbles ofertas y descuentos en ropa, accesorios, bolsas y calzado de las mejores marcas. ¡No te lo pierdas!",
     labels: ["promociones"],
+    active: false,
     date: "2025-11-07",
   },
   {
@@ -374,6 +417,7 @@ export const postsData: Post[] = [
     description:
       "🎉 ¡Llegó el Buen Fin a Sneaker Warriors! Aprovecha nuestras increíbles ofertas y descuentos en productos seleccionados. Encuentra el mejor calzado de las mejores marcas a precios irresistibles. ¡No te lo pierdas!",
     labels: ["promociones"],
+    active: false,
     date: "2025-11-07",
   },
   {
@@ -391,6 +435,7 @@ export const postsData: Post[] = [
     description:
       "🎉 ¡Llegó el Buen Fin a Novedades Gedri! Aprovecha nuestras increíbles ofertas y descuentos en toda la tienda. Encuentra ropa y accesorios de las mejores marcas a precios irresistibles. ¡No te lo pierdas!",
     labels: ["promociones"],
+    active: false,
     date: "2025-11-07",
   },
   {
@@ -510,6 +555,7 @@ export const postsData: Post[] = [
     description:
       "¡No dejes pasar esta oportunidad! Locales 105 y 106 ubicados en la planta baja de la plaza, con una medida de 33.01 m². Una excelente opción para tener uno de los mejores locales de la plaza.",
     labels: ["promociones"],
+    active: false,
     date: "2024-10-15",
   },
   {

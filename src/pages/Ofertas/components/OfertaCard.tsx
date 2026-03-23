@@ -28,11 +28,11 @@ export default function OfertaCard({ post }: OfertaCardProps) {
           <img
             src={imgSrc}
             alt={post.title}
-            className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto block transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
         ) : (
-          <div className="aspect-[4/3] w-full bg-zinc-100" />
+          <div className="h-48 w-full bg-zinc-100" />
         )}
 
         {/* PROMO badge */}
