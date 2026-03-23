@@ -2,7 +2,7 @@ export const plazaInfo = {
   name: 'Plaza Victoria',
   slogan: 'Tu destino de compras en Ixmiquilpan',
   description:
-    'Plaza Victoria no es solo un centro comercial; es un punto de encuentro para la comunidad de Ixmiquilpan. Desde nuestra apertura, nos hemos dedicado a ofrecer un espacio seguro, limpio y moderno donde las familias pueden crear memorias. Desde tiendas de moda hasta boutiques locales, joyerías y perfumerías, te traemos lo mejor del comercio al corazón del Valle del Mezquital.',
+    'Plaza Victoria es el centro comercial de referencia en Ixmiquilpan, Hidalgo. Con más de 10 tiendas especializadas en 3 plantas modernas, te ofrecemos la mejor experiencia de compra en el corazón de la ciudad: moda para toda la familia, calzado de marcas, joyería fina, perfumería, ropa femenina, accesorios importados y mucho más. Un espacio limpio, seguro y familiar donde cada visita se convierte en un momento especial. Si buscas tiendas en Ixmiquilpan, Plaza Victoria es tu destino.',
   address: 'C. Peña y Ramírez 3, Centro, 42300 Ixmiquilpan, Hgo.',
   hours: [
     { days: 'Lunes a Domingo', time: '10:00 AM – 7:00 PM' },
@@ -10,26 +10,26 @@ export const plazaInfo = {
   hoursNote: '* Los horarios pueden variar en días festivos. Consulta nuestras redes sociales.',
   stats: [
     { value: '10+', label: 'Tiendas' },
-    { value: '2',   label: 'Plantas' },
+    { value: '3',   label: 'Plantas' },
   ],
   features: [
     {
       icon: 'parking',
-      title: 'Estacionamiento',
-      description: 'Amplio estacionamiento gratuito para que visites con toda comodidad y sin preocupaciones.',
-      image: '/plaza/estaciona.jpeg',
+      title: 'Estacionamiento Propio',
+      description: 'Olvídate de buscar dónde dejar tu auto. Contamos con estacionamiento público con cámaras de seguridad 24/7, a tan solo $20 por hora. Lunes a Sábado 8 AM–8 PM, Domingos 9 AM–5 PM.',
+      image: '/plaza/estacionamiento-publico.jpeg',
     },
     {
       icon: 'store',
-      title: 'Tiendas Variadas',
-      description: 'Más de 10 tiendas con moda, calzado, joyería, perfumería, importados y más.',
-      image: '/plaza/iluminacion.jpeg',
+      title: 'Variedad de Tiendas',
+      description: 'Más de 10 tiendas especializadas en moda, calzado de marcas, joyería fina, perfumería, ropa femenina, accesorios importados y más. Todo bajo un mismo techo en el centro de Ixmiquilpan.',
+      image: '/plaza/tiendas-interior.jpeg',
     },
     {
       icon: 'shield',
       title: 'Ambiente Seguro',
-      description: 'Personal de seguridad y cámaras CCTV para garantizar tu tranquilidad en todo momento.',
-      image: '/plaza/frontalpv.jpeg',
+      description: 'Tu tranquilidad es nuestra prioridad. Cámaras CCTV en todo el recinto, acceso controlado y personal capacitado para que compres con total confianza en un espacio limpio y familiar.',
+      image: '/plaza/corredor-interior.jpeg',
     },
   ],
   mapEmbedUrl:

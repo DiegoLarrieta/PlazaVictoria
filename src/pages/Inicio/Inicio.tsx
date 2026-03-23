@@ -11,14 +11,14 @@ export default function Inicio() {
   return (
     <>
       <Helmet>
-        <title>Plaza Victoria | Centro Comercial en Ixmiquilpan, Hidalgo</title>
+        <title>Plaza Victoria | El Mejor Centro Comercial en Ixmiquilpan, Hidalgo</title>
         <meta
           name="description"
-          content="Visita Plaza Victoria, el centro comercial más moderno de Ixmiquilpan. Más de 10 tiendas de moda, calzado, joyería y perfumería. Lunes a Domingo 10:00 AM – 7:00 PM."
+          content="Plaza Victoria, el mejor centro comercial de Ixmiquilpan, Hidalgo. Más de 10 tiendas de moda, calzado, joyería y perfumería en 3 plantas modernas. Abierto lunes a domingo, 10 AM – 7 PM. ¡Visítanos!"
         />
         <link rel="canonical" href={`${SITE_URL}/inicio`} />
-        <meta property="og:title"       content="Plaza Victoria | Centro Comercial en Ixmiquilpan" />
-        <meta property="og:description" content="Tu destino de moda, calzado, joyería y estilo en el corazón del Valle del Mezquital." />
+        <meta property="og:title"       content="Plaza Victoria | El Mejor Centro Comercial en Ixmiquilpan" />
+        <meta property="og:description" content="Moda, calzado, joyería, perfumería y más en 3 plantas en el corazón de Ixmiquilpan. Abierto todos los días." />
         <meta property="og:url"         content={`${SITE_URL}/inicio`} />
         <meta property="og:type"        content="website" />
         <meta property="og:image"       content={`${SITE_URL}/imagenes/og-banner.jpg`} />

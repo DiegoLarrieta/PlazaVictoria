@@ -14,7 +14,7 @@ export default function AboutSection() {
               id="about-heading"
               className="mt-4 text-3xl font-bold text-zinc-900 md:text-4xl"
             >
-              El Centro Comercial Premier del Valle del Mezquital
+              El Mejor Centro Comercial de Ixmiquilpan
             </h2>
             <p className="mt-4 leading-relaxed text-zinc-600">
               {plazaInfo.description}
