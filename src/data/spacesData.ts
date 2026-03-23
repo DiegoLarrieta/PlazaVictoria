@@ -1,5 +1,5 @@
 export type SpaceType  = 'renta' | 'venta';
-export type SpaceFloor = 'Planta Baja' | 'Planta 1';
+export type SpaceFloor = 'Planta Baja' | 'Planta 1' | 'Zona Exterior';
 
 export interface CommercialSpace {
   id:          string;
@@ -18,43 +18,25 @@ export const availableSpaces: CommercialSpace[] = [
     type:        'renta',
     floor:       'Planta Baja',
     size:        33,
-    description: 'Amplio local doble en planta baja con excelente visibilidad desde el acceso principal. Ideal para moda, calzado o accesorios.',
-    image:       '/plaza/iluminacion.jpeg',
+    description: 'Local doble de 33.01 m² en planta baja con frontal de cristal y máxima visibilidad desde el acceso principal. Espacio amplio, luminoso y listo para ocuparse — ideal para moda, calzado, joyería o cualquier giro comercial. Informes: (759) 688 1818.',
+    image:       '/plaza/local-105-106.jpg',
   },
   {
-    id:          'local-107',
-    unit:        'Local 107',
+    id:          'espacio-exterior-207',
+    unit:        'Espacio Exterior — Zona de Puestos',
     type:        'renta',
-    floor:       'Planta Baja',
-    size:        28,
-    description: 'Local estratégico con flujo constante de visitantes. Perfecto para tienda de accesorios, joyería o servicios especializados.',
-    image:       '/plaza/escaleras.jpeg',
+    floor:       'Zona Exterior',
+    size:        4,
+    description: 'Tu negocio al pie de la calle, donde la gente ya está. Espacios desde 4 m² en la zona exterior de Plaza Victoria — al nivel de la calle, con acceso directo desde la banqueta y flujo natural de personas todas las noches. Horario de operación de 6:00 PM a 12:00 AM, ideal para antojitos, bebidas, postres o cualquier giro gastronómico o comercial nocturno. El lugar perfecto para emprender sin barreras: poco espacio, muchos clientes. Informes: Local 207 — (759) 688 1818 / (771) 319 8995.',
+    image:       '/plaza/espacio-exterior.jpeg',
   },
   {
-    id:          'local-201',
-    unit:        'Local 201',
-    type:        'venta',
-    floor:       'Planta 1',
-    size:        45,
-    description: 'Espacioso local en planta alta con acabados modernos y buena iluminación. Inversión segura en zona comercial de alta demanda.',
-    image:       '/plaza/ConocePlazaVictoria.jpeg',
-  },
-  {
-    id:          'local-204',
-    unit:        'Local 204',
+    id:          'local-211',
+    unit:        'Local 211',
     type:        'renta',
     floor:       'Planta 1',
     size:        22,
-    description: 'Local compacto ideal para boutique, perfumería o joyería. Ubicado en corredor de alto tráfico peatonal en planta alta.',
-    image:       '/plaza/pvside.jpeg',
-  },
-  {
-    id:          'local-108',
-    unit:        'Local 108',
-    type:        'venta',
-    floor:       'Planta Baja',
-    size:        40,
-    description: 'Local esquinero con doble acceso y máxima visibilidad. Acabados listos para ocuparse. Oportunidad única de inversión en planta baja.',
-    image:       '/plaza/frontalpv.jpeg',
+    description: 'Local de 22.63 m² en primer nivel con frontal de cristal, acabados modernos y espacio de bodega incluido — listo para ocuparse desde el primer día. Ideal para servicios, estética, consultorio o cualquier giro que requiera privacidad y practicidad. Informes: (772) 111 1321.',
+    image:       '/plaza/local-211.jpg',
   },
 ];
