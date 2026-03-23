@@ -22,8 +22,8 @@ export type Negocio = {
     {
       id: 1,
       nombre: "Sneakers Warriors",
-      sobre: "Encuentra los mejores sneakers para hombres y mujeres en Sneakers Warriors. Nuestra tienda ofrece una amplia variedad de tenis al mejor precio, con las últimas tendencias en calzado deportivo y casual. ¡Visítanos y encuentra tu par perfecto!",
-      descripcion: "Sneakers Warriors es una tienda especializada en calzado deportivo y casual. Ofrecemos una amplia variedad de zapatillas de las mejores marcas, ideales para deportistas y amantes del estilo urbano. Nuestro compromiso es brindar productos de alta calidad y un servicio excepcional a nuestros clientes.",
+      sobre: "Sneakers Warriors es la tienda de calzado deportivo y casual más completa de Ixmiquilpan. Encontrarás los mejores tenis para hombre y mujer: desde sneakers de moda y zapatillas para el gym, hasta calzado casual de uso diario. Manejamos marcas reconocidas a precios competitivos, con novedades que llegan constantemente. Si buscas el par perfecto para complementar tu estilo o rendir al máximo en cada paso, Sneakers Warriors es tu destino en Plaza Victoria.",
+      descripcion: "En Sneakers Warriors encontrarás la más completa selección de calzado deportivo y casual para hombre y mujer en Ixmiquilpan. Desde sneakers de las marcas más reconocidas hasta modelos casuales de uso diario, nuestra tienda renueva constantemente su catálogo para que siempre encuentres algo que se adapte a tu estilo y presupuesto. El par perfecto te está esperando.",
       categoria: "Calzado",
       logo: "negocios/sneakers-warriors/logo.jpg",
       imagenes: [
@@ -45,8 +45,8 @@ export type Negocio = {
     {
       id: 3,
       nombre: "Montana Hats",
-      sobre: "Montana Hats es una tienda especializada en gorras de alta calidad. Ofrecemos una amplia variedad de gorras para todos los gustos y estilos, desde modelos clásicos hasta tendencias actuales.",
-      descripcion: "En Montana Hats encontraras las mejores gorras para complementar tu estilo. Nuestra tienda se dedica a ofrecer productos de alta calidad, con diseños únicos y una atención personalizada para cada cliente. Ya sea que busques una gorra para el día a día o para ocasiones especiales, en Montana Hats tenemos la opción perfecta para ti.",
+      sobre: "Montana Hats es la tienda especialista en gorras y accesorios de moda en Ixmiquilpan. Con una selección curada de modelos clásicos, snapbacks y gorras estructuradas con las tendencias actuales, aquí encontrarás la pieza perfecta para completar cualquier look. Calidad garantizada y atención personalizada para que salgas con el estilo que buscas.",
+      descripcion: "Montana Hats es la tienda especializada en gorras y accesorios de moda que Ixmiquilpan necesitaba. Con una selección cuidada de modelos clásicos, snapbacks y gorras estructuradas con las últimas tendencias, aquí siempre encontrarás la pieza ideal para complementar tu look. Calidad real, variedad constante y atención que hace la diferencia.",
       categoria: "Gorras",
       logo: "negocios/montana-hats/logo.jpg",
       imagenes: [
@@ -65,8 +65,8 @@ export type Negocio = {
     {
       id: 5,
       nombre: "My Closet Boutique",
-      sobre: "Abrimos nuestras puertas en 2006 Bolsos, ropa y accesorios👗👠💍 todo para lucir bella en todo momento. Calidad y buen gusto nos distinguen✨",
-      descripcion: "My Closet Boutique es una tienda de moda que ofrece una cuidada selección de ropa, accesorios y vestidos para mujeres que buscan estilo y calidad. Desde prendas casuales hasta opciones más elegantes, nuestra boutique se dedica a brindar a nuestras clientas las últimas tendencias en moda, asegurando que cada visita sea una experiencia única y satisfactoria.",
+      sobre: "Desde 2006, My Closet Boutique viste a la mujer ixmiquilpense con estilo, elegancia y personalidad. Encontrarás ropa femenina de calidad, bolsos, accesorios y calzado cuidadosamente seleccionados para cada ocasión: desde looks casuales para el día a día hasta opciones sofisticadas para eventos especiales. Más de 18 años siendo el lugar favorito de las mujeres que saben lo que quieren.",
+      descripcion: "Con más de 18 años vistiendo a la mujer ixmiquilpense, My Closet Boutique es sinónimo de buen gusto y calidad. Encontrarás ropa femenina, bolsos, accesorios y calzado seleccionados con criterio para cada ocasión, desde el look casual perfecto hasta el outfit que te hará brillar en cualquier evento especial. Porque la moda con carácter nunca pasa de moda.",
       categoria: "Ropa",
       logo: "negocios/boutique-my-closet/logo.jpg",
       imagenes: [
@@ -83,8 +83,8 @@ export type Negocio = {
     {
       id: 6,
       nombre: "Arce Parfum",
-      sobre: "La mejor perfumería de Ixmiquilpan, con una amplia variedad de fragancias para todos los gustos y ocasiones.",
-      descripcion: "En Arce Parfum, encontrarás una exquisita selección de fragancias para cada ocasión. Nuestra tienda se especializa en perfumes de alta calidad, ofreciendo una variedad de aromas para hombres y mujeres. Ya sea que busques un perfume para uso diario o una fragancia especial para momentos únicos, en Arce Parfum tenemos la opción perfecta para ti.",
+      sobre: "Arce Parfum es la perfumería de referencia en Ixmiquilpan. Descubre una exclusiva selección de fragancias para hombre y mujer: desde perfumes frescos y cotidianos hasta aromas de noche sofisticados e irresistibles. Nuestros asesores te guían para encontrar la fragancia ideal que exprese tu personalidad. Porque el aroma correcto lo cambia todo.",
+      descripcion: "Arce Parfum es la perfumería que Ixmiquilpan estaba esperando. Descubre una exclusiva selección de fragancias para hombre y mujer, desde aromas frescos y cotidianos hasta perfumes de noche sofisticados e irresistibles. Nuestros asesores te acompañan para encontrar la fragancia que mejor exprese quién eres, porque el aroma correcto lo cambia todo.",
       categoria: "Perfumeria",
       logo: "negocios/arce-parfum/logo.jpg",
       imagenes: [
@@ -104,8 +104,8 @@ export type Negocio = {
     {
       id: 8,
       nombre: "Ammonite Plata",
-      sobre: "Ammonite Plata es una joyería especializada en piezas de plata de alta calidad en plata .925, con diseños únicos y elegantes para cada ocasión.",
-      descripcion: "Ammonite Plata es una joyería especializada en piezas de plata de alta calidad en plata .925, con diseños únicos y elegantes para cada ocasión. Ofrecemos una amplia variedad de joyas hechas a mano, incluyendo collares, aretes, pulseras y anillos. Cada pieza es cuidadosamente elaborada para ofrecer un estilo único y una calidad excepcional.",
+      sobre: "En Ammonite Plata, cada joya cuenta una historia. Somos una joyería especializada en plata .925 con diseños únicos, artesanales y contemporáneos: collares, aretes, pulseras y anillos que combinan tradición y tendencia. Ideal para regalar en ocasiones especiales o para lucirte en el día a día. Si buscas joyería de calidad real en Ixmiquilpan, Ammonite Plata es tu respuesta.",
+      descripcion: "Ammonite Plata es la joyería que transforma cada pieza en un recuerdo. Especialistas en plata .925 con diseños artesanales y contemporáneos, encontrarás collares, aretes, pulseras y anillos únicos que combinan tradición, estilo y calidad real. Ya sea para un regalo especial o para consentirte a ti mismo, aquí cada joya tiene algo que decir.",
       categoria: "Joyeria",
       logo: "negocios/ammonite-plata/logo.jpg",
       imagenes: [
@@ -124,8 +124,8 @@ export type Negocio = {
     {
       id: 9,
       nombre: "Mishel Morales",
-      sobre: "Productos importados directamente de USA con calidad y variedad",
-      descripcion: "¡Bienvenido a Mishel Morales! Un espacio que llega con una gran variedad de productos importados directamente de USA, pensados en ofrecer calidad y excelentes opciones para todos. 🛍️🇺🇸 Visítanos y descubre nuestras mejores ofertas.",
+      sobre: "Mishel Morales trae directamente de Estados Unidos una amplia variedad de productos importados de calidad: artículos de temporada, accesorios, artículos del hogar y mucho más, todo a precios accesibles. Si te gusta encontrar cosas diferentes, únicas y de primera calidad que no consigues en cualquier tienda, Mishel Morales es la que estabas buscando.",
+      descripcion: "Mishel Morales trae directamente de Estados Unidos una selección de productos importados que no encontrarás en cualquier tienda: artículos de temporada, accesorios, artículos del hogar y mucho más, todo con la calidad que caracteriza a los productos de importación y a precios sorprendentemente accesibles. Si buscas algo diferente y especial, aquí siempre hay algo nuevo esperándote.",
       categoria: "Importados",
       logo: "negocios/mishel-morales/logo.jpg",
       imagenes: [
@@ -145,8 +145,8 @@ export type Negocio = {
     {
       id: 10,
       nombre: "Mundo BB",
-      sobre: "Mundo BB es una tienda especializada en productos para bebés y niños pequeños, ofreciendo una amplia variedad de artículos de alta calidad para garantizar el bienestar de los más pequeños.",
-      descripcion: "En Mundo BB, encontrarás una encantadora selección de productos para bebés y niños pequeños. Nuestra tienda se dedica a ofrecer artículos de alta calidad, con diseños únicos y una atención personalizada para cada cliente. Ya sea que busques ropa, juguetes o accesorios para tu pequeño, en Mundo BB tenemos la opción perfecta para ti.",
+      sobre: "Mundo BB es el rincón más especial de Plaza Victoria, pensado para los más pequeños del hogar. Encuentra ropa, juguetes y accesorios para bebés y niños de alta calidad, seleccionados con cariño para que cada etapa de su crecimiento esté llena de alegría. Porque los mejores momentos comienzan con los mejores productos.",
+      descripcion: "Mundo BB es el lugar más especial de Plaza Victoria para los más pequeños del hogar. Encontrarás ropa, juguetes y accesorios para bebés y niños seleccionados con cariño y estándares de calidad que los papás agradecen. Porque equipar cada etapa del crecimiento de tu hijo con los mejores productos es una de las mejores inversiones que puedes hacer.",
       categoria: "Juguetes",
       logo: "negocios/mundo-bb/logo.jpg",
       imagenes: [
@@ -165,8 +165,8 @@ export type Negocio = {
     {
       id: 11,
       nombre: "Boutique Clau's Aldana",
-      sobre: "Boutique Clau's Aldana es una tienda de moda que ofrece una cuidada selección de ropa, accesorios y vestidos para mujeres que buscan estilo y calidad. Desde prendas casuales hasta opciones más elegantes, nuestra boutique se dedica a brindar a nuestras clientas las últimas tendencias en moda, asegurando que cada visita sea una experiencia única y satisfactoria.",
-      descripcion: "Boutique Clau's Aldana es una tienda de moda que ofrece una cuidada selección de ropa, accesorios y vestidos para mujeres que buscan estilo y calidad. Desde prendas casuales hasta opciones más elegantes, nuestra boutique se dedica a brindar a nuestras clientas las últimas tendencias en moda, asegurando que cada visita sea una experiencia única y satisfactoria.",
+      sobre: "Boutique Clau's Aldana es sinónimo de moda femenina con carácter. Encontrarás una selección fresca y actualizada de ropa para dama: desde outfits casuales y modernos para el día a día hasta looks que te harán destacar en cualquier ocasión especial. Atención personalizada, buen gusto y siempre las últimas tendencias. Porque vestirte bien es una forma de respetarte a ti misma.",
+      descripcion: "Boutique Clau's Aldana llega a Plaza Victoria con una propuesta de moda femenina fresca, actual y con personalidad. Encontrarás una selección de ropa para dama que va desde outfits casuales y modernos para el día a día, hasta looks que te harán destacar en cualquier evento especial. Atención personalizada, tendencias reales y el buen gusto que toda mujer merece.",
       categoria: "Ropa",
       logo: "negocios/boutique-claus-aldana/logo.jpg",
       imagenes: [
