@@ -39,4 +39,6 @@ export const plazaInfo = {
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=61581222458529&locale=es_LA',
   },
+  // TODO: replace with the real plaza management WhatsApp number (52 + 10 digits)
+  contactWhatsapp: '5217721000000',
 } as const;
