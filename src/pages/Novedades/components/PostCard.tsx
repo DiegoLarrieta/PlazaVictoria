@@ -21,7 +21,8 @@ interface PostCardProps {
 }
 
 export default function PostCard({ post }: PostCardProps) {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied]         = useState(false);
+  const [imgError, setImgError]     = useState(false);
 
   const firstMedia = post.media[0];
   const isVideo    = firstMedia?.type === 'video';
@@ -75,22 +76,23 @@ export default function PostCard({ post }: PostCardProps) {
 
       {/* Media */}
       <Link to={`/novedades/${post.slug}`} className="block relative" tabIndex={-1} aria-hidden="true">
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-zinc-100 sm:aspect-video">
-          {mediaSrc ? (
+        <div className="relative w-full overflow-hidden">
+          {mediaSrc && !imgError ? (
             <img
               src={mediaSrc}
               alt={post.title}
-              className="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
+              className="w-full h-auto block"
               loading="lazy"
+              onError={() => setImgError(true)}
             />
           ) : (
-            <div className="flex h-full items-center justify-center bg-zinc-100">
-              <Images className="h-10 w-10 text-zinc-300" />
+            <div className={`flex items-center justify-center h-48 ${isVideo ? 'bg-zinc-900' : 'bg-zinc-100'}`}>
+              <Images className={`h-10 w-10 ${isVideo ? 'text-zinc-600' : 'text-zinc-300'}`} />
             </div>
           )}
 
           {/* Video overlay */}
-          {isVideo && (
+          {isVideo && mediaSrc && !imgError && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/90 shadow-lg backdrop-blur-sm">
                 <PlayCircle className="h-8 w-8 text-primary" />

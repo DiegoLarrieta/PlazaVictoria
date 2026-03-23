@@ -22,8 +22,9 @@ export default function NovedadDetalle() {
   const { slug } = useParams<{ slug: string }>();
   const post = postsData.find((p) => p.slug === slug);
   const [mediaIndex, setMediaIndex] = useState(0);
-  const [copied, setCopied] = useState(false);
-  const [playing, setPlaying] = useState(false);
+  const [copied, setCopied]         = useState(false);
+  const [playing, setPlaying]       = useState(false);
+  const [posterError, setPosterError] = useState(false);
 
   if (!post) {
     return (
@@ -42,8 +43,8 @@ export default function NovedadDetalle() {
   const current = post.media[mediaIndex];
   const hasMany = post.media.length > 1;
 
-  const prev = () => setMediaIndex((i) => Math.max(0, i - 1));
-  const next = () => setMediaIndex((i) => Math.min(post.media.length - 1, i + 1));
+  const prev = () => { setMediaIndex((i) => Math.max(0, i - 1)); setPlaying(false); setPosterError(false); };
+  const next = () => { setMediaIndex((i) => Math.min(post.media.length - 1, i + 1)); setPlaying(false); setPosterError(false); };
 
   const handleShare = async () => {
     try {
@@ -124,17 +125,22 @@ export default function NovedadDetalle() {
               <img
                 src={current.src}
                 alt={current.alt ?? post.title}
-                className="w-full object-contain max-h-[70vh]"
+                className="w-full object-contain max-h-[70vh] min-h-[30vh]"
               />
             ) : (
-              <div className="relative">
+              <div className="relative min-h-[40vh] flex items-center justify-center">
                 {!playing ? (
                   <>
-                    <img
-                      src={current.poster}
-                      alt={post.title}
-                      className="w-full object-contain max-h-[70vh]"
-                    />
+                    {current.poster && !posterError ? (
+                      <img
+                        src={current.poster}
+                        alt={post.title}
+                        className="w-full object-contain max-h-[70vh]"
+                        onError={() => setPosterError(true)}
+                      />
+                    ) : (
+                      <div className="w-full min-h-[40vh]" />
+                    )}
                     <button
                       onClick={() => setPlaying(true)}
                       className="absolute inset-0 flex items-center justify-center bg-black/20"
@@ -182,7 +188,7 @@ export default function NovedadDetalle() {
                   {post.media.map((_, i) => (
                     <button
                       key={i}
-                      onClick={() => { setMediaIndex(i); setPlaying(false); }}
+                      onClick={() => { setMediaIndex(i); setPlaying(false); setPosterError(false); }}
                       className={`h-1.5 rounded-full transition-all ${
                         i === mediaIndex ? 'w-5 bg-white' : 'w-1.5 bg-white/50'
                       }`}

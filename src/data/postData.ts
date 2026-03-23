@@ -16,7 +16,40 @@ export interface Post {
 }
 
 export const postsData: Post[] = [
-  // agregar template de post 
+  {
+    id: "my-closet-boutique-elegancia-que-se-nota",
+    slug: "my-closet-boutique-elegancia-que-se-nota",
+    title: "My Closet Boutique — Elegancia que se nota, estilo que perdura 👗",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/mycloset-boutique.mp4",
+        poster: "/feed/Images/mycloset-boutique.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/mycloset-boutique.jpg",
+    description:
+      "My Closet Boutique 👗🛍️\n\nElegancia que se nota, estilo que perdura.\n\nDescubre tu mejor versión en uno de los espacios de moda femenina más queridos de Ixmiquilpan. My Closet Boutique te espera con las últimas tendencias en ropa, accesorios y mucho más, todo pensado para la mujer que sabe lo que quiere.\n\n📍 Plaza Victoria | Locales 110 y 111\n🕙 Lunes a Sábado — 11:00 AM a 8:00 PM\n\n¡Visítanos y descubre tu mejor versión! 🌸",
+    labels: ["aperturas"],
+    date: "2026-03-22",
+  },
+  {
+    id: "estacionamiento-pension-plaza-victoria",
+    slug: "estacionamiento-pension-plaza-victoria",
+    title: "🚗 Estaciona tu Auto con Total Seguridad en Plaza Victoria",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Posters/pension-plaza-victoria.jpg",
+        alt: "Estacionamiento Pensión Noche y Día — Plaza Victoria Ixmiquilpan",
+      },
+    ],
+    shareImage: "/feed/Posters/pension-plaza-victoria.jpg",
+    description:
+      "🚗✨ ¡Estaciona tu auto en un lugar seguro y de confianza!\n\nEn Plaza Victoria contamos con servicio de Pensión de Día y de Noche para brindarte la comodidad y tranquilidad que mereces. Tu auto estará protegido con cámaras de seguridad 24/7 en pleno centro de Ixmiquilpan.\n\n✅ Cámaras de seguridad 24/7\n📍 Ubicado en el Centro de Ixmiquilpan\n🅿️ Lugares disponibles\n📞 Informes: Local 108 — (759) 688 1818 / (771) 319 8995\n\nNo pongas en riesgo tu patrimonio. ¡Aparta tu lugar hoy y conduce tranquilo!",
+    labels: ["eventos"],
+    date: "2026-03-22",
+  },
   {
     id: "el-regalo-perfecto-de-san-valentin-se-encuentra-en-plaza-victoria",
     slug: "el-regalo-perfecto-de-san-valentin-se-encuentra-en-plaza-victoria",
@@ -42,7 +75,7 @@ export const postsData: Post[] = [
       {
         type: "video",
         src: "/feed/Videos/videorestaurante.mp4",
-        poster: "/feed/Images/localventa.jpg"
+        poster: "/feed/Images/localventa.jpg",
       }
     ],
     shareImage: "/feed/Images/localventa.jpg",
@@ -120,10 +153,10 @@ export const postsData: Post[] = [
       {
         type: "video",
         src: "/feed/Videos/videoinstitucional.mp4",
-        poster: "/plaza/InicioPlazaVictoria.png",
+        poster: "/feed/Images/videoinstitucional.jpg",
       },
     ],
-    shareImage: "/plaza/InicioPlazaVictoria.png",
+    shareImage: "/feed/Images/videoinstitucional.jpg",
     description:
       "🎥 Descubre Plaza Victoria, el corazón comercial de Ixmiquilpan...",
     labels: ["eventos"],
@@ -215,7 +248,7 @@ export const postsData: Post[] = [
       { 
         type: "video",
         src: "/feed/Videos/posada.mp4",
-        poster: "/feed/Images/navidad.jpg" 
+        poster: "/feed/Images/posada-poster.jpg"
       },
     ],
     shareImage: "/feed/Images/navidad.jpg",
