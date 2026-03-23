@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { Search } from 'lucide-react';
 import { negocios } from '../../data/negociosData';
 import TiendaCard from './components/TiendaCard';
-import FeaturedStore from './components/FeaturedStore';
 
 const SITE_URL = 'https://plazavictoria.mx';
 
@@ -22,8 +21,6 @@ const CATEGORY_LABEL: Record<string, string> = {
 const existingCategories = CATEGORY_ORDER.filter((c) =>
   negocios.some((n) => n.categoria === c)
 );
-
-const featured = negocios[0]; // Sneakers Warriors as featured
 
 export default function Tiendas() {
   const [search, setSearch] = useState('');
@@ -112,9 +109,6 @@ export default function Tiendas() {
             })}
           </div>
         </div>
-
-        {/* Featured store — mobile only */}
-        <FeaturedStore negocio={featured} />
 
         {/* Results count */}
         <p className="mb-5 text-sm text-zinc-400">
