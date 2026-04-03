@@ -18,6 +18,75 @@ export interface Post {
 
 export const postsData: Post[] = [
   {
+    id: "como-llegar-plaza-victoria",
+    slug: "como-llegar-plaza-victoria",
+    title: "📍 ¿Cómo Llegar a Plaza Victoria? — Ixmiquilpan, Hidalgo",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/como-llegar-plaza-victoria.mp4",
+        poster: "/feed/Images/como-llegar-plaza-victoria.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/como-llegar-plaza-victoria.jpg",
+    description:
+      "📍 ¿Ya sabes dónde estamos?\n\nPlaza Victoria está en el corazón de Ixmiquilpan — y llegar es más fácil de lo que imaginas.\n\nDale play al video y descubre cómo encontrarnos desde cualquier punto de la ciudad. Sin rodeos, sin complicaciones.\n\n🛍️ Tiendas, moda, accesorios, gastronomía y mucho más te esperan.\n\n📌 Estamos en el Centro de Ixmiquilpan, Hidalgo.\n\n¡Te esperamos hoy! ✨",
+    labels: ["eventos"],
+    active: true,
+    date: "2026-04-02",
+  },
+  {
+    id: "mycloset-nueva-coleccion-accesorios",
+    slug: "mycloset-nueva-coleccion-accesorios",
+    title: "✨ Nueva Colección — Outfits y Accesorios en My Closet Boutique",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Images/mycloset-nueva-coleccion-1.jpg",
+        alt: "Outfits de temporada — My Closet Boutique Plaza Victoria",
+      },
+      {
+        type: "image",
+        src: "/feed/Images/mycloset-nueva-coleccion-2.jpg",
+        alt: "Collar de charms dorados — My Closet Boutique Plaza Victoria",
+      },
+      {
+        type: "image",
+        src: "/feed/Images/mycloset-nueva-coleccion-3.jpg",
+        alt: "Collar con dije de caballito de mar — My Closet Boutique Plaza Victoria",
+      },
+      {
+        type: "image",
+        src: "/feed/Images/mycloset-nueva-coleccion-4.jpg",
+        alt: "Collar sol dorado con charms — My Closet Boutique Plaza Victoria",
+      },
+    ],
+    shareImage: "/feed/Images/mycloset-nueva-coleccion-1.jpg",
+    description:
+      "✨ La moda que llevas puesta dice todo lo que no necesitas decir.\n\nEn My Closet Boutique acabamos de renovar nuestra colección con prendas y accesorios que combinan estilo, elegancia y actitud — todo en un solo lugar.\n\n👗 Outfits de temporada listos para lucir\n📿 Collares artesanales y accesorios únicos\n💛 Piezas que complementan cualquier look\n\nPorque los detalles marcan la diferencia, y tú lo sabes.\n\n📍 Plaza Victoria Ixmiquilpan — Locales 110 y 111, Planta Baja (junto al elevador)\n\n¡Ven, pruébate y enamórate! 🛍️💚",
+    labels: ["aperturas"],
+    active: true,
+    date: "2026-04-02",
+  },
+  {
+    id: "tienda-naturista-plaza-victoria",
+    slug: "tienda-naturista-plaza-victoria",
+    title: "🌿 Tu Salud Natural Está Aquí — Tienda Naturista en Plaza Victoria",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/tienda-naturista.mp4",
+        poster: "/feed/Images/tienda-naturista.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/tienda-naturista.jpg",
+    description:
+      "🌿✨ ¿Quieres mejorar tu salud de forma natural y sin complicaciones?\n\nEn nuestra Tienda Naturista encontrarás todo lo que tu cuerpo necesita para sentirse bien por dentro y brillar por fuera. Productos 100% naturales, suplementos de alta calidad, líneas de cuidado de la piel y soluciones de bienestar integral — todo en un solo lugar.\n\n💚 Porque tu salud es tu mayor inversión, y la naturaleza tiene lo que necesitas.\n\n✅ Productos naturales y suplementos\n✅ Cuidado de la piel\n✅ Bienestar y vida saludable\n\n📍 Plaza Victoria — Local 112, Planta Baja\n\n¡Da el primer paso hoy y comienza tu camino hacia una vida más plena y saludable! 🌱",
+    labels: ["aperturas"],
+    active: true,
+    date: "2026-04-02",
+  },
+  {
     id: "oferta-skinny-jeans-claus-aldana",
     slug: "oferta-skinny-jeans-claus-aldana",
     title: "👖 Skinny Jeans de Temporada — Boutique Clau's Aldana",
