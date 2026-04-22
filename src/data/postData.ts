@@ -18,6 +18,132 @@ export interface Post {
 
 export const postsData: Post[] = [
   {
+    id: "feliz-dia-del-nino-plaza-victoria-2026",
+    slug: "feliz-dia-del-nino-plaza-victoria-2026",
+    title: "🎈 ¡Feliz Día del Niño! — Plaza Victoria te invita el 30 de Abril",
+    media: [
+      {
+        type: "image",
+        src: "/feed/Posters/dia-del-nino-2026.jpg",
+        alt: "Feliz Día del Niño en Plaza Victoria — 30 de Abril a partir de las 4:00 PM",
+      },
+    ],
+    shareImage: "/feed/Posters/dia-del-nino-2026.jpg",
+    description:
+      "🎉 ¡Plaza Victoria se viste de fiesta para celebrar a los más importantes!\n\nEste 30 de abril a partir de las 4:00 PM, trae a los peques y disfruta en familia de una tarde que no van a querer que termine.\n\n🎪 Juegos inflables\n🍭 Dulces gratis\n🎭 Show infantil\n🎁 Regalos sorpresa\n\nEntrada libre — solo necesitas venir con ganas de divertirte.\n\n📍 Plaza Victoria — Centro de Ixmiquilpan, Hidalgo\n📅 Jueves 30 de Abril • Desde las 4:00 PM\n\n¡Los esperamos a todos! 👨‍👩‍👧‍👦✨",
+    labels: ["eventos"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
+    id: "boutique-axi-plaza-victoria",
+    slug: "boutique-axi-plaza-victoria",
+    title: "🤩 Boutique Axi — Moda Femenina ya está en Plaza Victoria",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/boutique-axi.mp4",
+        poster: "/feed/Images/boutique-axi.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/boutique-axi.jpg",
+    description:
+      "✨ El estilo que buscabas acaba de llegar — y tiene dirección.\n\nBoutique Axi ya abrió sus puertas en Plaza Victoria con lo mejor en moda femenina: prendas modernas, looks que combinan actitud con tendencia y piezas pensadas para la mujer que quiere verse increíble todos los días.\n\n👗 Ropa femenina moderna y a la moda\n💫 Prendas para el día a día y ocasiones especiales\n🌸 Porque cada mujer merece un guardarropa que la represente\n\nSi llevas tiempo buscando tu tienda favorita de moda — ya la encontraste.\n\n📍 Plaza Victoria Ixmiquilpan — Local 202, Primer Nivel\n\n¡Ven, explora y encuentra tu próximo outfit! 🛍️😍",
+    labels: ["aperturas"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
+    id: "arce-parfum-fragancias-arabes",
+    slug: "arce-parfum-fragancias-arabes",
+    title: "🌹 Arce Parfum — Fragancias Árabes que Dejan Huella",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/arce-parfum.mp4",
+        poster: "/feed/Images/arce-parfum.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/arce-parfum.jpg",
+    description:
+      "✨ Un aroma dice lo que las palabras no pueden — y el tuyo debería ser inolvidable.\n\nEn Arce Parfum te esperan fragancias árabes únicas: intensas, elegantes y profundas, creadas para quienes buscan algo más allá de lo ordinario. Cada esencia es una experiencia sensorial que se queda en la memoria de todos los que te rodean.\n\n🌹 Perfumería árabe auténtica\n💫 Fragancias intensas, únicas y de larga duración\n✨ Para hombre, mujer y ocasiones especiales\n🎁 El regalo más personal que puedes dar\n\nBuscar tu fragancia ideal no es un capricho — es conocerte mejor.\n\n📍 Plaza Victoria Ixmiquilpan — Local 203, Primer Nivel\n\n¡Ven y encuentra la esencia que te define! 🥰⭐️",
+    labels: ["aperturas"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
+    id: "roa-boutique-plaza-victoria",
+    slug: "roa-boutique-plaza-victoria",
+    title: "🛍️ Roa Boutique — Moda Moderna que Habla por Ti",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/roa-boutique.mp4",
+        poster: "/feed/Images/roa-boutique.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/roa-boutique.jpg",
+    description:
+      "✨ Tu estilo es tuyo — Roa Boutique solo te ayuda a expresarlo mejor.\n\nEncuentra ropa moderna, piezas que combinan con todo y looks pensados para la mujer de hoy: versátil, segura y siempre a la moda. Desde lo casual hasta lo que te hace destacar en cualquier ocasión, Roa Boutique tiene exactamente lo que buscabas.\n\n🌸 Ropa moderna y tendencias actuales\n👗 Prendas para cada ocasión y cada estilo\n💫 Porque renovar tu look debería sentirse bien\n\nNo necesitas buscar más lejos — tu próximo outfit favorito ya te está esperando.\n\n📍 Plaza Victoria Ixmiquilpan — Local 104, Planta Baja\n\n¡Ven, pruébate y enamórate de tu nuevo look! 😍🛍️",
+    labels: ["aperturas"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
+    id: "dia-del-nino-plaza-victoria-2026",
+    slug: "dia-del-nino-plaza-victoria-2026",
+    title: "🎉 ¡Celebra el Día del Niño en Plaza Victoria! — 30 de Abril",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/dia-del-nino-plaza-victoria.mp4",
+        poster: "/feed/Images/dia-del-nino-plaza-victoria.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/dia-del-nino-plaza-victoria.jpg",
+    description:
+      "🎈 ¡El mejor día del año para los peques se celebra en Plaza Victoria!\n\nEste 30 de abril te invitamos a vivir una tarde que los niños no van a olvidar — llena de diversión, sorpresas, juegos y toda la alegría que se merecen.\n\n🎁 Sorpresas especiales para los niños\n🍭 Dulces y mucha diversión\n🎊 Actividades para toda la familia\n👨‍👩‍👧‍👦 Porque los momentos en familia son los que más valen\n\nMarca el calendario, avísale a los pequeños y preséntate con toda la familia.\n\n📍 Plaza Victoria — Centro de Ixmiquilpan, Hidalgo\n📅 Jueves 30 de Abril\n\n¡Los esperamos con los brazos abiertos! 🥳✨",
+    labels: ["eventos"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
+    id: "ammonite-plata-brillo-unico",
+    slug: "ammonite-plata-brillo-unico",
+    title: "💎 Joyería que Roba Miradas — Ammonite Plata en Plaza Victoria",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/ammonite-plata-joyeria.mp4",
+        poster: "/feed/Images/ammonite-plata-joyeria.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/ammonite-plata-joyeria.jpg",
+    description:
+      "✨ Hay accesorios que completan un outfit — y hay piezas que lo transforman por completo.\n\nEn Ammonite Plata encontrarás joyería diseñada para mujeres que saben lo que quieren: elegancia sin esfuerzo, detalles que se notan y piezas que cuentan tu historia sin decir una sola palabra.\n\n💎 Collares, aretes, pulseras y accesorios únicos\n✨ Desde el look casual hasta la ocasión especial\n🎁 El regalo perfecto para ti o para quien más quieres\n\nPorque el brillo que llevas puesta no es casualidad — es una decisión.\n\n📍 Plaza Victoria Ixmiquilpan — encuéntranos adentro del plaza\n\n¡Ven y descubre tu próxima pieza favorita! 💫",
+    labels: ["aperturas"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
+    id: "mycloset-ofertas-tiempo-limitado",
+    slug: "mycloset-ofertas-tiempo-limitado",
+    title: "🔥 ¡Ofertas por Tiempo Limitado en My Closet Boutique! — Solo por Hoy",
+    media: [
+      {
+        type: "video",
+        src: "/feed/Videos/mycloset-ofertas-temporada.mp4",
+        poster: "/feed/Images/mycloset-ofertas-temporada.jpg",
+      },
+    ],
+    shareImage: "/feed/Images/mycloset-ofertas-temporada.jpg",
+    description:
+      "🚨 ¡ALERTA DE OFERTA! Las prendas que querías, al precio que esperabas — y solo por tiempo limitado.\n\nEn My Closet Boutique tenemos descuentos increíbles en ropa de temporada para que renueves tu guardarropa sin gastar de más. Looks completos, colores que marcan tendencia y piezas únicas que no encontrarás en otro lugar.\n\n💃 Porque verse bien no debería ser un lujo — debería ser una decisión que tomas hoy.\n\n🏷️ Descuentos exclusivos en ropa en tendencia\n👗 Outfits listos para lucir al instante\n⏳ Solo por tiempo limitado — las tallas se agotan rápido\n\n📍 Plaza Victoria Ixmiquilpan — Locales 110 y 111, Planta Baja\n\n¡Ven hoy y lleva el outfit que mereces antes de que se agote! 🛍️🔥",
+    labels: ["promociones"],
+    active: true,
+    date: "2026-04-21",
+  },
+  {
     id: "como-llegar-plaza-victoria",
     slug: "como-llegar-plaza-victoria",
     title: "📍 ¿Cómo Llegar a Plaza Victoria? — Ixmiquilpan, Hidalgo",

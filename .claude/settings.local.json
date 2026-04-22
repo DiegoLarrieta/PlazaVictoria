@@ -3,7 +3,14 @@
     "allow": [
       "Bash(npm run:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(ffmpeg -version)",
+      "Bash(cp '/Users/diego/Downloads/Roaboutique.mp4' '/Users/diego/Documents/PlazaVictoria/public/feed/Videos/roa-boutique.mp4')",
+      "Bash(ffmpeg -i public/feed/Videos/roa-boutique.mp4 -ss 00:00:01 -vframes 1 -update 1 public/feed/Images/roa-boutique.jpg -y)",
+      "Bash(cp '/Users/diego/Downloads/arceparfmumvideo.mp4' '/Users/diego/Documents/PlazaVictoria/public/feed/Videos/arce-parfum.mp4')",
+      "Bash(ffmpeg -i public/feed/Videos/arce-parfum.mp4 -ss 00:00:01 -vframes 1 -update 1 public/feed/Images/arce-parfum.jpg -y)",
+      "Bash(cp '/Users/diego/Downloads/boutiqueaxl.mp4' '/Users/diego/Documents/PlazaVictoria/public/feed/Videos/boutique-axi.mp4')",
+      "Bash(ffmpeg -i public/feed/Videos/boutique-axi.mp4 -ss 00:00:01 -vframes 1 -update 1 public/feed/Images/boutique-axi.jpg -y)"
     ]
   }
 }

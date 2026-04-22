@@ -35,7 +35,7 @@ export const plazaInfo = {
   mapEmbedUrl:
     'https://maps.google.com/maps?q=C.+Peña+y+Ramírez+3,+Centro,+42300+Ixmiquilpan,+Hidalgo,+Mexico&output=embed&z=16',
   mapDirectionsUrl:
-    'https://www.google.com/maps/dir/?api=1&destination=C.+Peña+y+Ramírez+3,+Centro,+42300+Ixmiquilpan,+Hidalgo,+Mexico',
+    'https://maps.app.goo.gl/8RsPeN2nHoVdYRZ58',
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=61581222458529&locale=es_LA',
   },

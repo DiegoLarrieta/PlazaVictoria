@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && tsx scripts/generar-og-pages.ts",
+    "thumbnails": "tsx scripts/generar-thumbnails.ts",
     "lint": "eslint .",
     "preview": "vite preview"
   },
